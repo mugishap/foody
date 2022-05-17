@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
+import moment from "moment";
 
 function Menuside() {
   const [items, setItems] = useState([]);
@@ -23,10 +24,82 @@ function Menuside() {
     console.log(data);
     setItems(data);
   };
+  const date = moment().format("dddd, MMMM Do YYYY");
+  console.log(date);
   return (
-    <div className="relative ml-48 w-8/12 flex items-center">
+    <div className="ml-72 w-10/12 flex flex-col items-center">
       <Navbar />
-      {JSON.stringify(items)}
+      <div className="rounded-xl w-10/12 bg-white flex flex-col p-8 box-border h-auto">
+        <div className="flex justify-between items-center">
+          <div className="flex flex-col items-start">
+            <span className="text-3xl font-bold">Menu</span>
+            <span className="text-xl text-gray-500">On {date}</span>
+          </div>
+          <div className="buttons ml-48">
+            <button
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              onMouseOver={(e) => {
+                e.target.classList.add("focused-btn");
+              }}
+              onMouseLeave={(e) => {
+                e.target.classList.remove("focused-btn");
+              }}
+            >
+              Drinks
+            </button>
+            <button
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              onMouseOver={(e) => {
+                e.target.classList.add("focused-btn");
+              }}
+              onMouseLeave={(e) => {
+                e.target.classList.remove("focused-btn");
+              }}
+            >
+              Starter
+            </button>
+            <button
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              onMouseOver={(e) => {
+                e.target.classList.add("focused-btn");
+              }}
+              onMouseLeave={(e) => {
+                e.target.classList.remove("focused-btn");
+              }}
+            >
+              Appetizer
+            </button>
+            <button
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              onMouseOver={(e) => {
+                e.target.classList.add("focused-btn");
+              }}
+              onMouseLeave={(e) => {
+                e.target.classList.remove("focused-btn");
+              }}
+            >
+              Desert
+            </button>
+            <button
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              onMouseOver={(e) => {
+                e.target.classList.add("focused-btn");
+              }}
+              onMouseLeave={(e) => {
+                e.target.classList.remove("focused-btn");
+              }}
+            >
+              Main
+            </button>
+          </div>
+        </div>
+      {items.content &&
+        items.content.map((item) => {
+          return (
+            <div className="w-10/12 h-48 m-3 rounded-xl bg-gray-400 flex flex-col "></div>
+          );
+        })}
+      </div>
     </div>
   );
 }

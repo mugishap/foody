@@ -4,9 +4,9 @@ import Sidebar from "../components/Sidebar";
 
 function Menu() {
   return (
-    <div className="flex justify-between items-start">
+    <div className="flex justify-between flex-row">
       <Sidebar />
-      {/* <Menuside /> */}
+      <Menuside />
     </div>
   );
 }
