@@ -29,7 +29,7 @@ function Menuside() {
   return (
     <div className="ml-72 w-10/12 flex flex-col items-center">
       <Navbar />
-      <div className="rounded-xl w-10/12 bg-white flex flex-col p-8 box-border h-auto">
+      <div className="rounded-xl w-10/12 bg-white flex flex-col items-center p-8 box-border h-auto">
         <div className="flex justify-between items-center">
           <div className="flex flex-col items-start">
             <span className="text-3xl font-bold">Menu</span>
@@ -93,12 +93,15 @@ function Menuside() {
             </button>
           </div>
         </div>
-      {items.content &&
-        items.content.map((item) => {
-          return (
-            <div className="w-10/12 h-48 m-3 rounded-xl bg-gray-400 flex flex-col "></div>
-          );
-        })}
+        {items.content &&
+          items.content.map((item) => {
+            return (
+              <div className="w-10/12 h-48 m-3 rounded-xl bg-gray-200 flex flex-col ">
+                <span>{item.description}</span>
+                <span>{item.name}</span>
+              </div>
+            );
+          })}
       </div>
     </div>
   );
