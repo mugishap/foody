@@ -29,3 +29,6 @@ code {
 .oo{
   color: #F53B57;
 }
+.focused-div{
+  transform: translateX(-26px);
+}
