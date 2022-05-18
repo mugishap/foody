@@ -5,6 +5,8 @@ import Signup from "./pages/Signup";
 import Menu from "./pages/Menu";
 import RestProfile from "./pages/RestProfile"
 import Account from "./pages/Account";
+import Orders from "./pages/Orders";
+
 import OverViewChart from "./pages/OverViewChart";
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
         <Route element={<Menu />} path="/menu"></Route>
         <Route element={<RestProfile/>} path="/createProfile"/>
         <Route element={<Account />} path="/account"></Route>
+        <Route element={<Orders/>} path="/orders"></Route>
         <Route element={<OverViewChart />} path="/overview" />
         </Routes>
       </BrowserRouter>

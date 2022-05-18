@@ -52,3 +52,6 @@ body {
     margin: 0;
   }
 }
+.borde{
+  border-left: 5px solid #fff;
+}
