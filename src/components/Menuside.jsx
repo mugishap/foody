@@ -3,25 +3,22 @@ import Navbar from "./Navbar";
 import moment from "moment";
 
 function Menuside() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState({});
   const [loader, setLoader] = useState(true);
-  const [images, setImages] = useState([]);
   useEffect(() => {
     getItems();
   }, []);
 
-  const getImages = async () => {
-    console.log(items.content);
-    if (!items.content.length) return;
-    console.log("after");
-    const names = items.content.map((item) => {
-      return item.name.split(" ")[1];
+  const getImages = async (_items) => {
+    // console.log(items)
+    const names = _items.content.map((item) => {
+      return item.name;
     });
-    if (!names) return;
     let imagesFromLocalStorage = JSON.parse(localStorage.getItem("images"));
-    if (imagesFromLocalStorage !== null) {
-      setImages(imagesFromLocalStorage);
-      console.log(images);
+    if (imagesFromLocalStorage) {
+      for (let i = 0; i < names.length; i++) {
+        _items.content[i].image = imagesFromLocalStorage[i];
+      }
       setLoader(false);
     } else {
       let imageArray = [];
@@ -38,15 +35,11 @@ function Menuside() {
           }
         );
         const data = await api.json();
-        imageArray.push({
-          key: items.content[i].createdAt,
-          url: data.value[0].thumbnailUrl,
-        });
+        _items.content[i].image = data.value[0].thumbnailUrl;
+        imageArray.push(data.value[0].thumbnailUrl);
       }
-      console.log(imageArray);
       localStorage.setItem("images", JSON.stringify(imageArray));
-      setImages(imageArray);
-      console.log(imageArray.length);
+      setItems(_items);
       setLoader(false);
     }
   };
@@ -64,10 +57,9 @@ function Menuside() {
       }
     );
     const data = await api.json();
-    console.log(data);
     setItems(data);
 
-    getImages();
+    getImages(data);
   };
   const date = moment().format("dddd, MMMM Do YYYY");
   return (
@@ -145,16 +137,14 @@ function Menuside() {
                 return (
                   <div
                     key={item.createdAt}
-                    className="w-10/12 h-48 m-3 rounded-xl bg-gray-200 flex flex-col justify-center"
+                    className="w-10/12 p-16 p- box-border h-64 m-3 rounded-xl items-center bg-gray-200 flex flex-row justify-start"
                   >
-                    <img
-                      src={images && images[i].url}
-                      className="w-24 h-24"
-                      alt=""
-                    />
-                    <span>{item.description}</span>
-                    <span>{item.name}</span>
-                    <span>{item.price}</span>
+                    <img src={item.image} className="rounded-xl mr-32 w-3/12 h-48" alt="" />
+                    <div className="flex flex-col items-start text-xl">
+                      <span className="m-4">{item.name}</span>
+                      {/* <span>{item.description}</span> */}
+                      <span className="m-4">Price: {item.unitPrice}</span>
+                    </div>
                   </div>
                 );
               })}
