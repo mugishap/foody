@@ -285,4 +285,4 @@ function OverViewChart() {
   );
 }
 
-export default ChartPage;
+export default OverViewChart;
