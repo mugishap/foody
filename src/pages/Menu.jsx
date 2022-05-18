@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar";
 function Menu() {
   return (
     <div className="flex justify-between flex-row">
-      <Sidebar />
+      <Sidebar tab='account' />
       <Menuside />
     </div>
   );
