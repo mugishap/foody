@@ -9,29 +9,11 @@ function Sidebar(props) {
     document.querySelector(".bg-blue-500").parentElement.style.color = "white";
   }, 100);
   return (
-<<<<<<< HEAD
-    <div className="h-screen w-2/12  flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
+    <div className="sidebar-div h-screen w-2/12  flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
       <span className="text-4xl menu-logo">
         F<span className="text-4xl menu-logo oo">oo</span>die
       </span>
       <div className="mt-16 mb-96 flex items-center justify-center flex-col w-full">
-        <Link to="/signup" className="w-full">
-          <div className="flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 text-gray-400 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
-            <div className="flex items-center justify-start w-1/3 h-full">
-              {
-                (tab === "overview" ? (
-                  <div className="bg-blue-500 focused-div mr-4 w-1/12 h-full"></div>
-                ) : (
-                  <div className="bg-transparent focused-div mr-4 w-1/12 h-full"></div>
-                ))
-              }
-              <span className="bx bx-list-ul bx-md"></span>
-=======
-    <div className="sidebar-div h-screen w-2/12 fixed flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
-      <span className="text-4xl menu-logo">
-        F<span className="text-4xl menu-logo oo">oo</span>die
-      </span>
-      <div className="mt-20 mb-96 flex items-center justify-center flex-col w-full">
         <Link to="/overview" className="w-full">
           {tab === "overview" ? (
             <div className="border-l-white flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
@@ -41,7 +23,6 @@ function Sidebar(props) {
               <div className="text-left text-white flex items-center justify-start w-1/2">
                 <span>Overview</span>
               </div>
->>>>>>> dd3df5f1931251ff369ec2cc3d30a357f769dbb4
             </div>
           ) : (
             <div className="flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
@@ -118,21 +99,7 @@ function Sidebar(props) {
           )}
         </Link>
       </div>
-<<<<<<< HEAD
       <div className=" flex flex-col items-center justify-center">
-        <Link to="/signup" className="w-full">
-          <div className="flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 text-gray-400 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
-            <div className="flex items-center justify-start w-1/3 h-full">
-              {
-                (tab === "settings" ? (
-                  <div className="bg-blue-500 focused-div mr-4 w-1/12 h-full"></div>
-                ) : (
-                  <div className="bg-transparent focused-div mr-4 w-1/12 h-full"></div>
-                ))
-              }{" "}
-              <span className="bx bxs-cog bx-md"></span>
-=======
-      <div className="mt-32 flex flex-col items-center justify-center">
         <Link to="/settings" className="w-full">
           {tab === "overview" ? (
             <div className="border-l-white flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
@@ -142,7 +109,6 @@ function Sidebar(props) {
               <div className="text-left text-white flex items-center justify-start w-1/2">
                 <span>Settings</span>
               </div>
->>>>>>> dd3df5f1931251ff369ec2cc3d30a357f769dbb4
             </div>
           ) : (
             <div className="flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
