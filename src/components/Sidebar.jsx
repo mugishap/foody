@@ -6,11 +6,11 @@ function Sidebar(props) {
   let tab = props.tab;
   console.log(tab);
   return (
-    <div className="h-screen w-2/12 fixed flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
+    <div className="h-screen w-2/12  flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
       <span className="text-4xl menu-logo">
         F<span className="text-4xl menu-logo oo">oo</span>die
       </span>
-      <div className="mt-20 mb-96 flex items-center justify-center flex-col w-full">
+      <div className="mt-16 mb-96 flex items-center justify-center flex-col w-full">
         <Link to="/signup" className="w-full">
           <div className="flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 text-gray-400 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
             <div className="flex items-center justify-start w-1/3 h-full">
@@ -80,7 +80,7 @@ function Sidebar(props) {
           </div>
         </Link>
       </div>
-      <div className="mt-32 flex flex-col items-center justify-center">
+      <div className=" flex flex-col items-center justify-center">
         <Link to="/signup" className="w-full">
           <div className="flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 text-gray-400 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
             <div className="flex items-center justify-start w-1/3 h-full">

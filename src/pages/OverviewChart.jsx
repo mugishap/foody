@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
-import "chart.js"
-import { Line } from "react-chartjs-2";
-import Chart  from "chart.js/auto";
+import ChartDiv from "../components/ChartDiv"
+import TypeDesrciber from "../components/TypeDescriber"
+import PlaceIncomeDetails from "../components/PlaceIncomeDetails";
 import boxicons from "boxicons/css/boxicons.css";
-import CatAvatar from "../../public/CatProfile.png";
-// import Chart from "../components/chart";
-
+import CatAvatar from "/CatProfile.png";
 function OverViewChart() {
   const titles = [
     { title: "Clients", amount: 60 },
@@ -43,154 +41,8 @@ function OverViewChart() {
       amount2: 12000,
     },
   ];
-  const RevenuesData = [
-    { title: "Orders", amount: 609721 },
-    { title: "Items", amount: 557 },
-    { title: "Order/hour", amount: 874678 },
-    { title: "Clients", amount: 952203 },
-  ];
-  const data = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-    datasets: [
-      {
-        label: "Items",
-        data: [33, 53, 85, 41, 44, 65],
-        fill: true,
-        backgroundColor: "rgba(75,192,192,0.2)",
-        borderColor: "rgba(75,192,192,1)",
-        tension:0.4
-      },
-      {
-        label: "Orders",
-        data: [33, 25, 35, 51, 54, 76],
-        fill: false,
-        borderColor: "#742774",
-        tension:0.4
-      }
-    ]
-  };
-  function TypeDesrciber({ title, amount }) {
-    const [selected, setSelected] = useState(titles[0].title);
-    return (
-      <div
-        className={
-          (selected == title) ?
-          ` bg-rose-400 text-[10px] xl:text-lg font-semibold   rounded-md w-36 xl:w-48 h-16 xl:h-24 pt-3 hover:cursor-pointer`
-        :"border-2 text-[10px] xl:text-lg font-semibold border-blue-400 hover:bg-rose-300 rounded-md w-36 xl:w-48 h-16 xl:h-24 pt-3 hover:cursor-pointer"}
-        onClick={() => {
-          setSelected(title);
-        }}
-      >
-        <h5
-          className={
-            (selected == title) ? "text-white w-fit m-auto " : "text-gray-500 w-fit m-auto "
-            
-          }
-        >
-          {title}
-        </h5>
-        <h5
-          className={
-            (selected == title) ? "text-white w-fit m-auto" : "text-black w-fit m-auto"
-          }
-        >
-          {amount}
-        </h5>
-      </div>
-    );
-  }
-  function Revenues({ title, amount }) {
-    return (
-      <div
-        className={(title!=RevenuesData[RevenuesData.length-1].title)?`  border-b-2  font-semibold   w-full h-20 xl:h-32 pt-3 `:"font-semibold border-b-2 md:border-b-0   w-full h-20 xl:h-32 pt-3 "}
-      >
-        <h5 className={"text-gray-500 w-fit m-auto text-sm md:text-base xl:text-lg"}>{title}</h5>
-        <h5 className={"text-black w-fit m-auto text-xs md:text-sm"}>{amount}</h5>
-      </div>
-    );
-  }
-  function PlaceIncomeDetails({
-    title,
-    description1,
-    amount1,
-    description2,
-    amount2,
-  }) {
-    return (
-      <div className="h-32 xl:h-40 w-[100%] md:w-80 border-2 text-sm xl:text-base border-blue-400 rounded-md py-2 flex flex-col">
-        <div className="px-3 border-b-2 flex flex-col">
-          <div className="flex flex-row justify-between">
-            <h5 className=" text-black font-semibold ">{title}</h5>
-            <h5 className=" text-rose-500 font-semibold">
-              View Details
-            </h5>
-          </div>
-          <h5 className=" flex   text-gray-500 font-semibold mt-2 mx-0  ">
-            Sales
-          </h5>
-          <div className="flex flex-row mt-2 justify-between">
-            <h5 className=" text-black font-semibold ">
-              {description1}
-            </h5>
-            <h5 className=" text-gray-500 font-semibold">{amount1}</h5>
-          </div>
-        </div>
-        <div className="flex flex-row mt-2 px-3 justify-between">
-          <h5 className=" text-black font-semibold">{description2}</h5>
-          <h5 className=" text-gray-500 font-semibold">{amount2}</h5>
-        </div>
-      </div>
-    );
-  }
-  function ChatDiv() {
-    return (
-      <div className="flex  flex-col-reverse md:flex-row h-fit md:h-[500px] mt-6 w-[100%] xl:w-[95%] border-2  rounded-md border-blue-400">
-        <div className="w-[100%] xl:w-[83%] h-full md:border-r-2 md:border-blue-400 ">
+  
 
-          <div className="flex flex-row w-[93%] justify-between mt-4 pr-1 md:pr-3 flex-wrap">
-              <div className="flex flex-col">
-                <h5 className="text-base text-black font-bold">
-                  Todays trends
-                </h5>
-                <p className=" flex  text-xs text-gray-500 font-semibold mt-1  ml-5">
-                  as of 25 2022 09:41 pm
-                </p>
-              </div>
-              
-              <div className="flex flex-row mt-2.5 md:text-sm text-xs">
-                <div className="flex flex-row ml-3 md:ml-5">
-                  <div className="w-2 md:w-5 h-[2px] xl:h-[3px] bg-blue-400 mt-2" />
-                  <h5 className=" ml-1.5 text-black">Today</h5>
-                </div>
-                <div className="flex flex-row ml-3 md:ml-5">
-                  <div className="w-2 md:w-5 h-[2px] xl:h-[3px] bg-gray-400 mt-2" />
-                  <h5 className=" ml-1.5 text-gray-500">Week</h5>
-                </div>
-                <div className="flex flex-row ml-3 md:ml-5">
-                  <div className="w-2 md:w-5 h-[2px] xl:h-[3px] bg-gray-400 mt-2" />
-                  <h5 className=" ml-1.5 text-gray-500">Month</h5>
-                </div>
-                <div className="flex flex-row ml-3 md:ml-5">
-                  <div className="w-2 md:w-5 h-[2px] xl:h-[3px] bg-gray-400 mt-2" />
-                  <h5 className=" ml-1.5 text-gray-500">Year</h5>
-                </div>
-            </div>
-          </div>
-          <Line
-              datasetIdKey="id"
-              data={data}
-              width={400}
-              height={185}       
-          />
-      </div>
-        <div className="w-[100%] md:w-[17%] h-full flex flex-col">
-          {RevenuesData.map((revenue) => (
-            <Revenues title={revenue.title} amount={revenue.amount} />
-          ))}
-        </div>
-      </div>
-    );
-  }
   return (
     <div className="flex flex-row w-full h-full fixed">
       <Sidebar />
@@ -213,13 +65,12 @@ function OverViewChart() {
         </div>
         <div className="flex flex-row w-[100%] md:w-[85%]  xl:w-[78%] mt-4 justify-between gap-x-2">
           {titles.map((title) => (
-            <TypeDesrciber title={title.title} amount={title.amount} />
+            <TypeDesrciber titles={titles} title={title.title} amount={title.amount} />
           ))}
         </div>
-        <ChatDiv />
-        {/* <Chart /> */}
-        <div className="flex flex-col md:flex-row justify-between  w-[100%] ">
-          <div className="grid xl:grid-cols-2 grid-cols-1 w-[100%] md:w-9/12 gap-5 mt-5">
+        <ChartDiv />
+        <div className="flex flex-col md:flex-row justify-between  w-[100%] md:w-[95%] ">
+          <div className="grid xl:grid-cols-2 grid-cols-1 w-[100%]  gap-5 mt-5">
             {placeIncomes.map((placeIncome) => (
               <PlaceIncomeDetails
                 title={placeIncome.title}
@@ -230,7 +81,7 @@ function OverViewChart() {
               />
             ))}
           </div>
-          <div className="flex flex-col   border-2 rounded-md border-blue-400 md:mx-0 mx-auto md:w-fit w-[100%] xl:w-80 h-[335px] mt-[20px]">
+          <div className="flex flex-col   border-2 rounded-md border-blue-400 md:mx-0 mx-auto md:w-fit w-[100%] xl:w-96 h-[335px] mt-[20px]">
             <div className="px-3 border-b-2 flex flex-col">
               <div className="flex flex-row mt-2 px-3 justify-between">
                 <h5 className="text-md text-black font-semibold">Create</h5>

@@ -16,7 +16,7 @@ function App() {
         <Route element={<Menu />} path="/menu"></Route>
         <Route element={<RestProfile/>} path="/createProfile"/>
         <Route element={<Account />} path="/account"></Route>
-        <Route element={<OverViewChart />} path="/overview" />
+        <Route element={<OverViewChart />} path="/overview"></Route>
         </Routes>
       </BrowserRouter>
     </div>
