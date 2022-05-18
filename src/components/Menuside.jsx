@@ -63,7 +63,7 @@ function Menuside() {
   };
   const date = moment().format("dddd, MMMM Do YYYY");
   return (
-    <div className="ml-72 w-10/12 flex flex-col items-center">
+    <div className="menu-side ml-72 w-10/12 flex flex-col items-center">
       <Navbar />
       <div className="rounded-xl w-10/12 bg-white flex flex-col items-center p-8 box-border h-auto">
         <div className="flex justify-between items-center">

@@ -44,3 +44,14 @@ code {
   border: 3px solid #f53b57;
   font-weight: 500;
 }
+@media screen and (max-width:1300px) {
+  .sidebar-div{
+    display: none;
+  }
+  .menu-side{
+    margin: 0;
+  }
+}
+.borde{
+  border-left: 5px solid #fff;
+}
