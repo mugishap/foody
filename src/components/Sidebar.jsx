@@ -16,7 +16,7 @@ function Sidebar(props) {
       <div className="mt-20 mb-96 flex items-center justify-center flex-col w-full">
         <Link to="/overview" className="w-full">
           {tab === "overview" ? (
-            <div className="border-l-white flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bx-list-ul bx-md"></span>
               </div>
@@ -36,8 +36,8 @@ function Sidebar(props) {
           )}
         </Link>
         <Link to="/tables" className="w-full">
-          {tab === "overview" ? (
-            <div className="border-l-white flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+          {tab === "tables" ? (
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-bowl-rice bx-md"></span>
               </div>
@@ -57,8 +57,8 @@ function Sidebar(props) {
           )}
         </Link>
         <Link to="/orders" className="w-full">
-          {tab === "overview" ? (
-            <div className="border-l-white flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+          {tab === "orders" ? (
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-group bx-md"></span>
               </div>
@@ -78,8 +78,8 @@ function Sidebar(props) {
           )}
         </Link>
         <Link to="/menu" className="w-full">
-          {tab === "overview" ? (
-            <div className="border-l-white flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+          {tab === "menu" ? (
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-food-menu bx-md"></span>
               </div>
@@ -101,8 +101,8 @@ function Sidebar(props) {
       </div>
       <div className="mt-32 flex flex-col items-center justify-center">
         <Link to="/settings" className="w-full">
-          {tab === "overview" ? (
-            <div className="border-l-white flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+          {tab === "settings" ? (
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-cog bx-md"></span>
               </div>
@@ -122,10 +122,10 @@ function Sidebar(props) {
           )}
         </Link>
         <Link to="/account" className="w-full">
-          {tab === "overview" ? (
-            <div className="border-l-white flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+          {tab === "account" ? (
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
-                <span className="bx bx-list-ul bx-md"></span>
+                <span className="bx bxs-face bx-md"></span>
               </div>
               <div className="text-left text-white flex items-center justify-start w-1/2">
                 <span>Account</span>
