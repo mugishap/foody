@@ -11,16 +11,20 @@ function Menuside() {
   }, []);
 
   const getImages = async () => {
+    console.log(items.content);
+    if (!items.content.length) return;
+    console.log("after");
     const names = items.content.map((item) => {
       return item.name.split(" ")[1];
     });
     if (!names) return;
     let imagesFromLocalStorage = JSON.parse(localStorage.getItem("images"));
-    if (imagesFromLocalStorage) {
+    if (imagesFromLocalStorage !== null) {
       setImages(imagesFromLocalStorage);
       console.log(images);
       setLoader(false);
     } else {
+      let imageArray = [];
       for (let i = 0; i < names.length; i++) {
         const api = await fetch(
           `https://bing-image-search1.p.rapidapi.com/images/search?q=${names[i]}`,
@@ -34,15 +38,15 @@ function Menuside() {
           }
         );
         const data = await api.json();
-        let imageArray = [];
         imageArray.push({
           key: items.content[i].createdAt,
           url: data.value[0].thumbnailUrl,
         });
-        console.log(imageArray);
-        setImages(imageArray);
       }
-      localStorage.setItem("images", JSON.stringify(images));
+      console.log(imageArray);
+      localStorage.setItem("images", JSON.stringify(imageArray));
+      setImages(imageArray);
+      console.log(imageArray.length);
       setLoader(false);
     }
   };
@@ -143,7 +147,11 @@ function Menuside() {
                     key={item.createdAt}
                     className="w-10/12 h-48 m-3 rounded-xl bg-gray-200 flex flex-col justify-center"
                   >
-                    <img src={images[i].url} className="w-24 h-24" alt="" />
+                    <img
+                      src={images && images[i].url}
+                      className="w-24 h-24"
+                      alt=""
+                    />
                     <span>{item.description}</span>
                     <span>{item.name}</span>
                     <span>{item.price}</span>
