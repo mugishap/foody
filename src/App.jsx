@@ -9,6 +9,7 @@ import Orders from "./pages/Orders";
 
 import OverViewChart from "./pages/OverviewChart";
 import Settings from "./pages/Settings";
+import Tables from "./pages/Tables";
 function App() {
 
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route element={<Account />} path="/account"></Route>
         <Route element={<Orders/>} path="/orders"></Route>
         <Route element={<OverViewChart />} path="/overview" />
+        <Route element={<Tables />} path="/tables" />
 <Route element={<Settings/>} path='/settings'></Route>
         </Routes>
       </BrowserRouter>
