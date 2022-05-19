@@ -5,9 +5,6 @@ import moment from "moment";
 function Menuside() {
   const [items, setItems] = useState({});
   const [loader, setLoader] = useState(true);
-  useEffect(() => {
-    getItems();
-  }, []);
 
   const getImages = async (_items) => {
     // console.log(items)
@@ -44,8 +41,8 @@ function Menuside() {
     }
   };
   const getItems = async () => {
-    const token = localStorage.getItem("token");
-    if (!token) return;
+    const token = localStorage.getItem("accessToken");
+    if (!token) window.location.replace('/login');
     const api = await fetch(
       "http://196.223.240.154:8099/supapp/api/menu-items?page=0&size=30",
       {
@@ -62,6 +59,9 @@ function Menuside() {
     getImages(data);
   };
   const date = moment().format("dddd, MMMM Do YYYY");
+  useEffect(() => {
+    getItems();
+  }, []);
   return (
     <div className="menu-side  w-10/12 flex flex-col overflow-hidden h-screen items-center">
       <Navbar />
@@ -69,9 +69,11 @@ function Menuside() {
         <div className="flex justify-between items-center">
           <div className="flex flex-col items-start">
             <span className="text-3xl font-bold">Menu</span>
-            <span className="text-xl text-gray-500 whitespace-nowrap">On {date}</span>
+            <span className="text-xl text-gray-500 whitespace-nowrap">
+              On {date}
+            </span>
           </div>
-          <div className="buttons ml-48">
+          <div className="buttons ml-24">
             <button
               className="p-3 rounded-md border-4 m-3 menu-btn w-32"
               onMouseOver={(e) => {
@@ -129,16 +131,16 @@ function Menuside() {
             </button>
           </div>
         </div>
-        <div className="w-full flex flex-row items-start justify-center">
+        <div className="w-full flex flex-row items-start justify-between">
           {!loader ? (
-            <div className="overflow-y-scroll h-[82vh]">
+            <div className="overflow-y-scroll w-full h-[82vh]">
               {items.content &&
                 items.content.map((item) => {
                   let i = 0;
                   return (
                     <div
                       key={item.createdAt}
-                      className="fetched w-10/12 p-16 p- box-border h-64 m-3 rounded-xl items-center bg-gray-200 flex flex-row justify-start"
+                      className="fetched  p-6 p- box-border h-64 m-3 rounded-xl items-center bg-gray-200 flex flex-row justify-start"
                     >
                       <img
                         src={item.image}
@@ -146,7 +148,9 @@ function Menuside() {
                         alt=""
                       />
                       <div className="flex flex-col items-start text-xl">
-                        <span className="whitespace-nowrap m-4">{item.name}</span>
+                        <span className="whitespace-nowrap m-4">
+                          {item.name}
+                        </span>
                         {/* <span>{item.description}</span> */}
                         <span className="m-4">Price: {item.unitPrice}</span>
                       </div>
@@ -158,7 +162,7 @@ function Menuside() {
           ) : (
             ""
           )}
-          <div className="ml-16 w-1/3 mt-48 rounded-xl border-4 flex flex-col items-center justify-center p-4 border-[#f53b57] ">
+          <div className="ml-16 w-3/12 mt-48 rounded-xl border-4 flex flex-col items-center justify-center p-4 border-[#f53b57] ">
             <span>Add new items</span>
             <div>
               <span>Create new item</span>

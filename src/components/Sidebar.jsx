@@ -7,7 +7,7 @@ function Sidebar(props) {
   return (
     <div className="z-10 shadow-2xl shadow-black sidebar-div relative top-0  h-screen w-2/12  flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
       <span className="text-4xl font-[500] menu-logo text-center">
-        F<span className="text-4xl menu-logo oo">oo</span>die
+        F<span className="text-4xl menu-logo oo">oo</span>dy
       </span>
       <div className="mt-16 mb-96 flex items-center justify-center flex-col w-full">
         <Link to="/overview" className="w-full">

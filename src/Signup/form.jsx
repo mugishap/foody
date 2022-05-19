@@ -1,8 +1,7 @@
-import { TextField } from "@material-ui/core";
+import { TextField } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
-
 
 export default function Form() {
   const [firstName, setFirstName] = useState("");
@@ -11,6 +10,40 @@ export default function Form() {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
 
+  const logUserIn = async (data) => {
+    const api = await fetch(
+      "http://196.223.240.154:8099/supapp/api/auth/signin",
+      {
+        headers: { "Content-Type": "application/json" },
+        method: "POST",
+        body: JSON.stringify({
+          login: data.email,
+          password: data.password,
+        }),
+      }
+    );
+    const info = await api.json();
+    if (info.apierror.status === "UNAUTHORIZED") {
+      swal("Error", "There ocurred an error while logging you in", "error");
+      return;
+    } else {
+      const accessToken = info.token.accessToken;
+      const refreshToken = info.token.refreshToken;
+      const user = {
+        firstName: info.firstName.split(" ")[0],
+        lastName: info.firstName.split(" ")[2],
+        email: info.email,
+        phone: info.mobile,
+        authority: info.authorities.authority,
+        status: info.status,
+        id: info.id,
+      };
+      localStorage.setItem("accessToken", accessToken);
+      localStorage.setItem("refreshToken", refreshToken);
+      localStorage.setItem("userCredentials", JSON.stringify(user));
+      window.location.replace('/menu')
+    }
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     const api = await fetch(
@@ -36,6 +69,9 @@ export default function Form() {
         "error"
       );
     }
+    if (data.message === "User registered successfully") {
+      logUserIn({ email, password });
+    }
   };
 
   return (
@@ -54,7 +90,9 @@ export default function Form() {
           <div className="flex flex-col mt-6" style={{ marginTop: "2rem" }}>
             {/* <label className="text-sm pt-2">FIRSTNAME</label> */}
             <TextField
-             id="outlined-basic" label="Firstname" variant="outlined"
+              id="outlined-basic"
+              label="Firstname"
+              variant="outlined"
               type="text"
               onChange={(e) => {
                 setFirstName(e.target.value);
@@ -67,7 +105,9 @@ export default function Form() {
           <div className="flex flex-col mt-4">
             {/* <label className="text-sm pt-2">LASTNAME</label> */}
             <TextField
-             id="outlined-basic" label="Lastname" variant="outlined"
+              id="outlined-basic"
+              label="Lastname"
+              variant="outlined"
               type="text"
               onChange={(e) => {
                 setLastName(e.target.value);
@@ -79,19 +119,23 @@ export default function Form() {
           <div className="flex flex-col mt-4">
             {/* <label className="text-sm pt-2">PHONE</label> */}
             <TextField
-             id="outlined-basic" label="Phone" variant="outlined"
+              id="outlined-basic"
+              label="Phone"
+              variant="outlined"
               type="text"
               onChange={(e) => {
                 setPhone(e.target.value);
               }}
               name="phone"
-className=""
-/>
+              className=""
+            />
           </div>
           <div className="flex flex-col mt-4">
             {/* <label className="text-sm pt-2">EMAIL</label> */}
             <TextField
-             id="outlined-basic" label="Email" variant="outlined"
+              id="outlined-basic"
+              label="Email"
+              variant="outlined"
               type="text"
               onChange={(e) => {
                 setEmail(e.target.value);
@@ -103,8 +147,11 @@ className=""
           <div className="flex flex-col mt-4">
             {/* <label className="text-sm pt-2">PASSWORD</label> */}
             <TextField
-             id="outlined-basicl"
-             defaultValue="Small" label="Passoword" variant="outlined" className=" placeholder-blue-600  w-80 rounded-lg text-sm pl-6 mt-5 "
+              id="outlined-basicl"
+              defaultValue="Small"
+              label="Passoword"
+              variant="outlined"
+              className=" placeholder-blue-600  w-80 rounded-lg text-sm pl-6 mt-5 "
               type="password"
               onChange={(e) => {
                 setPassword(e.target.value);
