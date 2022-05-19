@@ -5,8 +5,8 @@ import Sidebar from '../components/Sidebar'
 function Orders() {
   return (
     <div>
-      <Sidebar/>
-      <Orderside tab='orders'/>  
+      <Sidebar tab='orders'/>
+      <Orderside />  
     </div>
   )
 }
