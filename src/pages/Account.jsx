@@ -8,9 +8,9 @@ function Account() {
   const [user, setUser] = useState({});
   const [loader, setLoader] = useState(true);
   return (
-    <div className="flex justify-between items-stretch flex-row">
+    <div className="flex justify-between  items-stretch flex-row">
       <Sidebar tab="account" />
-      <div className="w-10/12 ml-96 z-10 flex flex-col items-center justify-center">
+      <div className="w-10/12  fixed overflow-hidden z-10 flex flex-col items-center justify-center">
         <Navbar />
         <div className="m-24 flex flex-col justify-center items-center bg-slate-300 rounded-md w-6/12 box-border  h-auto p-10">
           <img
