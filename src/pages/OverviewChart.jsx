@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
-import "chart.js";
+
 import { Line } from "react-chartjs-2";
 
 import ChartDiv from "../components/ChartDiv"
