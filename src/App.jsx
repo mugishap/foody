@@ -24,7 +24,6 @@ function App() {
           <Route element={<Account />} path="/account"></Route>
           <Route element={<OverViewChart />} path="/overview"></Route>
           <Route element={<Orders />} path="/orders"></Route>
-          <Route element={<OverViewChart />} path="/overview" />
           <Route element={<Tables />} path="/tables" />
           <Route element={<Settings />} path="/settings"></Route>
           <Route element={<Landpage />} path="/"></Route>
