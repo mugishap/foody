@@ -3,10 +3,11 @@ import Sidebar from "../components/Sidebar";
 import "chart.js";
 import { Line } from "react-chartjs-2";
 import Chart from "chart.js/auto";
+import ChartDiv from "../components/ChartDiv"
+import TypeDesrciber from "../components/TypeDescriber"
+import PlaceIncomeDetails from "../components/PlaceIncomeDetails";
 import boxicons from "boxicons/css/boxicons.css";
-import CatAvatar from "../../public/CatProfile.png";
-// import Chart from "../components/chart";
-
+import CatAvatar from "/CatProfile.png";
 function OverViewChart() {
   const titles = [
     { title: "Clients", amount: 60 },
@@ -195,6 +196,8 @@ function OverViewChart() {
       </div>
     );
   }
+  
+
   return (
     <div className="flex flex-row w-full h-full fixed">
       <Sidebar tab='overview'/>
@@ -219,13 +222,12 @@ function OverViewChart() {
         </div>
         <div className="flex flex-row w-[100%] md:w-[85%]  xl:w-[78%] mt-4 justify-between gap-x-2">
           {titles.map((title) => (
-            <TypeDesrciber title={title.title} amount={title.amount} />
+            <TypeDesrciber titles={titles} title={title.title} amount={title.amount} />
           ))}
         </div>
-        <ChatDiv />
-        {/* <Chart /> */}
-        <div className="flex flex-col md:flex-row justify-between  w-[100%] ">
-          <div className="grid xl:grid-cols-2 grid-cols-1 w-[100%] md:w-9/12 gap-5 mt-5">
+        <ChartDiv />
+        <div className="flex flex-col md:flex-row justify-between  w-[100%] md:w-[95%] ">
+          <div className="grid xl:grid-cols-2 grid-cols-1 w-[100%]  gap-5 mt-5">
             {placeIncomes.map((placeIncome) => (
               <PlaceIncomeDetails
                 title={placeIncome.title}
@@ -236,7 +238,7 @@ function OverViewChart() {
               />
             ))}
           </div>
-          <div className="flex flex-col   border-2 rounded-md border-blue-400 md:mx-0 mx-auto md:w-fit w-[100%] xl:w-80 h-[335px] mt-[20px]">
+          <div className="flex flex-col   border-2 rounded-md border-blue-400 md:mx-0 mx-auto md:w-fit w-[100%] xl:w-96 h-[335px] mt-[20px]">
             <div className="px-3 border-b-2 flex flex-col">
               <div className="flex flex-row mt-2 px-3 justify-between">
                 <h5 className="text-md text-black font-semibold">Create</h5>

@@ -9,11 +9,11 @@ function Sidebar(props) {
     document.querySelector(".bg-blue-500").parentElement.style.color = "white";
   }, 100);
   return (
-    <div className="sidebar-div h-screen w-2/12 fixed flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
+    <div className="sidebar-div h-screen w-2/12  flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
       <span className="text-4xl menu-logo">
         F<span className="text-4xl menu-logo oo">oo</span>die
       </span>
-      <div className="mt-20 mb-96 flex items-center justify-center flex-col w-full">
+      <div className="mt-16 mb-96 flex items-center justify-center flex-col w-full">
         <Link to="/overview" className="w-full">
           {tab === "overview" ? (
             <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
@@ -99,7 +99,7 @@ function Sidebar(props) {
           )}
         </Link>
       </div>
-      <div className="mt-32 flex flex-col items-center justify-center">
+      <div className=" flex flex-col items-center justify-center">
         <Link to="/settings" className="w-full">
           {tab === "settings" ? (
             <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
