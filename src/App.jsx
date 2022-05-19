@@ -18,12 +18,8 @@ function App() {
         <Route element={<Menu />} path="/menu"></Route>
         <Route element={<RestProfile/>} path="/createProfile"/>
         <Route element={<Account />} path="/account"></Route>
-<<<<<<< HEAD
-        <Route element={<OverViewChart />} path="/overview"></Route>
-=======
         <Route element={<Orders/>} path="/orders"></Route>
         <Route element={<OverViewChart />} path="/overview" />
->>>>>>> dd3df5f1931251ff369ec2cc3d30a357f769dbb4
         </Routes>
       </BrowserRouter>
     </div>
