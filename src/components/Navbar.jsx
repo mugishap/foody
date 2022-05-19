@@ -1,11 +1,28 @@
-import React from "react";
+import React from 'react'
+import {FaSearch} from "react-icons/fa"
+import {MdNotifications} from "react-icons/md"
 
 function Navbar() {
   return (
-    <div className="w-full h-24 flex items-center box-border p-2">
-      <h1 className="">Menu</h1>
+    <div className="navbar">
+        <p>F<span>OO</span>DY</p>
+
+        <div className='icons'>
+           <FaSearch id='search'/>
+           <MdNotifications id='notif'/>
+
+        </div>
+        <div className='user'>
+            <p>Shyaka Valentin</p>
+            <img src="profile.png" />
+
+        </div>
+
+
+    
+         
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
