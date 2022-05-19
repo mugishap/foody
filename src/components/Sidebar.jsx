@@ -33,7 +33,7 @@ function Sidebar(props) {
         </Link>
         <Link to="/tables" className="w-full">
           {tab === "tables" ? (
-            <div className="border-l-white border-l-4 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-bowl-rice bx-md"></span>
               </div>
@@ -54,7 +54,7 @@ function Sidebar(props) {
         </Link>
         <Link to="/orders" className="w-full">
           {tab === "orders" ? (
-            <div className="border-l-white border-l-4 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-group bx-md"></span>
               </div>
@@ -75,7 +75,7 @@ function Sidebar(props) {
         </Link>
         <Link to="/menu" className="w-full">
           {tab === "menu" ? (
-            <div className="border-l-white border-l-4 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-food-menu bx-md"></span>
               </div>
@@ -98,7 +98,7 @@ function Sidebar(props) {
       <div className=" flex flex-col items-center justify-center">
         <Link to="/settings" className="w-full">
           {tab === "settings" ? (
-            <div className="border-l-white border-l-4 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-cog bx-md"></span>
               </div>
@@ -119,7 +119,7 @@ function Sidebar(props) {
         </Link>
         <Link to="/account" className="w-full">
           {tab === "account" ? (
-            <div className="border-l-white border-l-4 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
+            <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx bxs-face bx-md"></span>
               </div>
