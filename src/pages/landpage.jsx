@@ -1,15 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+
 function Landpage() {
   return (
     <div className='lg:w-full lg:overflow-x-hidden sm:w-full '>
       <div className=' lg:w-full lg:overflow-x-hidden sm:w-full md:w-full '>
        <svg   className = " lg:h-screen sm:h-screen  md-screen md-full"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500"><path fill="#061730" fill-opacity="1" d="M0,390L1440,160L1440,0L0,0Z"></path></svg>
-       <h1 className='text-white absolute top-5 text-5xl ml-5 font-normal leading-6 font-kurale' >F<span className='text-[#F53B57]'>oo</span>dy</h1>
+       <Link to='/'><h1 className='text-white absolute top-5 text-5xl ml-5 leading-6 font-[kurale] font-[500]' >F<span className='text-[#F53B57] font-[kurale]'>oo</span>dy</h1></Link>
 
      <div className='absolute  left-0 top-60'>
      <h2 className=' text-white  font-bold lg:text-6xl sm:text-4xl leading-6  lg:mt-[-80px]  sm:ml-12'>REGISTER FOR FREE</h2>
      <p className='lg:text-2xl text-white font-normal leading-6 ml-7 sm:mt-5 sm:w-3/4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia suscipit ratione tempore <br></br>soluta quisquam  ratione modi quam?</p>
-     <button className='bg-[#F53B57] lg:text-white sm:text-white lg:w-80  sm:w-64 lg:h-12  sm:h-12 lg:mt-8 sm:mt-5 lg:ml-20 ml-12 rounded-lg text-1xl'>Register your restaurant</button>
+     <Link to='/signup'><button className='bg-[#F53B57] lg:text-white sm:text-white lg:w-80  sm:w-64 lg:h-12  sm:h-12 lg:mt-8 sm:mt-5 lg:ml-20 ml-12 rounded-lg text-1xl'>Register your restaurant</button></Link>
      </div>
        <svg width="30" height="30" className='absolute right-80 top-5' viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className='' d="M18.3201 32C18.4078 32.6339 18.7219 33.2146 19.2044 33.635C19.6869 34.0553 20.3052 34.2869 20.9451 34.2869C21.585 34.2869 22.2033 34.0553 22.6858 33.635C23.1683 33.2146 23.4824 32.6339 23.5701 32H18.3201Z" fill="#F53B57"/>

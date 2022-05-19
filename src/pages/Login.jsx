@@ -1,6 +1,6 @@
 // import Backg from './components/Signup/backg';
-import LogForm from "./logform";
-import Lobackg from "./lobackg";
+import LogForm from "./../Login/logform";
+import Lobackg from "./../Login/lobackg";
 
 // import "./App.css";
 // import Form from './components/Signup/form';
