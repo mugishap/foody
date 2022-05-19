@@ -27,7 +27,7 @@ function App() {
           <Route element={<Orders />} path="/orders"></Route>
           <Route element={<Tables />} path="/tables" />
           <Route element={<Settings />} path="/settings"></Route>
-          <Route element={<Landpage />} path="/home"></Route>
+          <Route element={<Landpage />} path="/"></Route>
           <Route element={<Notfound />} path="*"></Route>
         </Routes>
       </BrowserRouter>
