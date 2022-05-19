@@ -5,11 +5,12 @@ import Signup from "./pages/Signup";
 import Menu from "./pages/Menu";
 import RestProfile from "./pages/RestProfile";
 import Account from "./pages/Account";
+import Landpage from "./pages/landpage";
+import Sidebar  from "./components/Sidebar";
 import Orders from "./pages/Orders";
 import Login from './pages/Login'
 import OverViewChart from "./pages/OverviewChart";
 import Settings from "./pages/Settings";
-import Landpage from "./pages/landpage";
 import Tables from "./pages/Tables";
 import Notfound from "./pages/Notfound";
 function App() {
@@ -24,10 +25,9 @@ function App() {
           <Route element={<Account />} path="/account"></Route>
           <Route element={<OverViewChart />} path="/overview"></Route>
           <Route element={<Orders />} path="/orders"></Route>
-          <Route element={<OverViewChart />} path="/overview" />
           <Route element={<Tables />} path="/tables" />
           <Route element={<Settings />} path="/settings"></Route>
-          <Route element={<Landpage />} path="/"></Route>
+          <Route element={<Landpage />} path="/home"></Route>
           <Route element={<Notfound />} path="*"></Route>
         </Routes>
       </BrowserRouter>
