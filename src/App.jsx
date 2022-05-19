@@ -6,7 +6,7 @@ import Menu from "./pages/Menu";
 import RestProfile from "./pages/RestProfile";
 import Account from "./pages/Account";
 import Orders from "./pages/Orders";
-
+import Landpage from "./pages/landpage";
 import OverViewChart from "./pages/OverviewChart";
 import Settings from "./pages/Settings";
 import Tables from "./pages/Tables";
@@ -25,6 +25,7 @@ function App() {
           <Route element={<OverViewChart />} path="/overview" />
           <Route element={<Tables />} path="/tables" />
           <Route element={<Settings />} path="/settings"></Route>
+          <Route element={<Landpage />} path="/home"></Route>
           <Route element={<Notfound />} path="*"></Route>
         </Routes>
       </BrowserRouter>

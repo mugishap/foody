@@ -166,31 +166,31 @@ function Menuside() {
             </div>
             <form className="w-6/12">
             <div className="w-full">
-                <label class="form-control flex flex-row items-center justify-between w-full">
+                <label className="form-control flex flex-row items-center justify-between w-full">
                   <input type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Dessert</span>
                 </label>
               </div>
               <div className="w-full">
-                <label class="form-control flex flex-row items-center justify-between w-full">
+                <label className="form-control flex flex-row items-center justify-between w-full">
                   <input type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Drink</span>
                 </label>
               </div>
               <div className="w-full">
-                <label class="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" checked />
+                <label className="form-control flex flex-row items-center justify-between w-full">
+                  <input type="checkbox" name="checkbox-checked"  />
                   <span className="text-start">Appetizer</span>
                 </label>
               </div>
               <div className="w-full">
-                <label class="form-control flex flex-row items-center justify-between w-full">
+                <label className="form-control flex flex-row items-center justify-between w-full">
                   <input type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Main</span>
                 </label>
               </div>
               <div className="w-full">
-                <label class="form-control flex flex-row items-center justify-between w-full">
+                <label className="form-control flex flex-row items-center justify-between w-full">
                   <input type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Starter</span>
                 </label>
