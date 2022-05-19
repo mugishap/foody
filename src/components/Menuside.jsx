@@ -65,11 +65,11 @@ function Menuside() {
   return (
     <div className="menu-side  w-10/12 flex flex-col overflow-hidden h-screen items-center">
       <Navbar />
-      <div className="rounded-xl w-10/12 bg-white flex flex-col items-center p-8 box-border h-auto">
+      <div className="rounded-xl  mt-16 w-10/12 bg-white flex flex-col items-center p-8 box-border h-auto">
         <div className="flex justify-between items-center">
           <div className="flex flex-col items-start">
             <span className="text-3xl font-bold">Menu</span>
-            <span className="text-xl text-gray-500">On {date}</span>
+            <span className="text-xl text-gray-500 whitespace-nowrap">On {date}</span>
           </div>
           <div className="buttons ml-48">
             <button
@@ -138,15 +138,15 @@ function Menuside() {
                   return (
                     <div
                       key={item.createdAt}
-                      className="w-10/12 p-16 p- box-border h-64 m-3 rounded-xl items-center bg-gray-200 flex flex-row justify-start"
+                      className="fetched w-10/12 p-16 p- box-border h-64 m-3 rounded-xl items-center bg-gray-200 flex flex-row justify-start"
                     >
                       <img
                         src={item.image}
-                        className="object-cover rounded-xl mr-32 w-4/12 h-48"
+                        className="object-cover rounded-xl mr-16 w-48 h-48"
                         alt=""
                       />
                       <div className="flex flex-col items-start text-xl">
-                        <span className="m-4">{item.name}</span>
+                        <span className="whitespace-nowrap m-4">{item.name}</span>
                         {/* <span>{item.description}</span> */}
                         <span className="m-4">Price: {item.unitPrice}</span>
                       </div>
@@ -158,14 +158,14 @@ function Menuside() {
           ) : (
             ""
           )}
-          <div className="w-1/3 mt-48 rounded-xl border-4 flex flex-col items-center justify-center p-4 border-[#f53b57] ">
+          <div className="ml-16 w-1/3 mt-48 rounded-xl border-4 flex flex-col items-center justify-center p-4 border-[#f53b57] ">
             <span>Add new items</span>
             <div>
               <span>Create new item</span>
               <span className="bx bx-add"></span>
             </div>
-            <form className="w-6/12">
-            <div className="w-full">
+            <form className="w-10/12">
+              <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
                   <input type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Dessert</span>
@@ -179,7 +179,7 @@ function Menuside() {
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked"  />
+                  <input type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Appetizer</span>
                 </label>
               </div>
