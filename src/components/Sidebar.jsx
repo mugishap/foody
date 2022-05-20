@@ -1,6 +1,6 @@
-// import React from "react";
-// import boxicons from "boxicons/css/boxicons.css";
-// import { Link } from "react-router-dom";
+import React from "react";
+import boxicons from "boxicons/css/boxicons.css";
+import { Link } from "react-router-dom";
 
 function Sidebar(props) {
   let tab = props.tab;

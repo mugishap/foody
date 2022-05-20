@@ -6,7 +6,7 @@ function Landpage() {
     <div className='lg:w-full lg:overflow-x-hidden sm:w-full '>
       <div className=' lg:w-full lg:overflow-x-hidden sm:w-full md:w-full '>
        <svg   className = " lg:h-screen sm:h-screen  md-screen md-full"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500"><path fill="#061730" fill-opacity="1" d="M0,390L1440,160L1440,0L0,0Z"></path></svg>
-       <Link to='/'><h1 className='text-white absolute top-5 text-5xl ml-5 leading-6 font-[kurale] font-[500]' >F<span className='text-[#F53B57] font-[kurale]'>oo</span>dy</h1></Link>
+       <Link to='/'><h1 className='text-white absolute top-5 text-5xl ml-5 leading-6 landing-logo font-[500]' >F<span className='text-[#F53B57] font-[kurale]'>oo</span>dy</h1></Link>
 
      <div className='absolute  left-0 top-60'>
      <h2 className=' text-white  font-bold lg:text-6xl sm:text-4xl leading-6  lg:mt-[-80px]  sm:ml-12'>REGISTER FOR FREE</h2>
