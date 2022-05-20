@@ -14,13 +14,13 @@ function Account() {
       ? window.location.replace("/login")
       : setUser(JSON.parse(localStorage.getItem("userCredentials")));
   }, []);
-const handleUpdate = (e) => {
-  e.preventDefault()
-  swal("Ooops!!!","Feature is not yet available","error",{
-    buttons:false,
-    timer:1500
-  })
-}
+  const handleUpdate = (e) => {
+    e.preventDefault();
+    swal("Ooops!!!", "Feature is not yet available", "error", {
+      buttons: false,
+      timer: 1500,
+    });
+  };
   return (
     <div className="flex justify-between fixed flex-col w-full md:flex-row">
       <Sidebar tab="account" />
@@ -34,9 +34,11 @@ const handleUpdate = (e) => {
           <div className="form w-full flex flex-col justify-center items-center">
             <form className="w-full flex flex-col items-center justify-center ">
               <div className="labels mt-3 flex justify-between items-center w-full">
-                <label className="whitespace-nowrap" htmlFor="username">First Name: </label>
+                <label className="whitespace-nowrap" htmlFor="username">
+                  First Name:{" "}
+                </label>
                 <input
-                 onChange={()=>{}}
+                  onChange={() => {}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
@@ -44,9 +46,11 @@ const handleUpdate = (e) => {
                 />
               </div>
               <div className="labels mt-3 flex justify-between items-center w-full">
-                <label className="whitespace-nowrap" htmlFor="username">Last Name: </label>
+                <label className="whitespace-nowrap" htmlFor="username">
+                  Last Name:{" "}
+                </label>
                 <input
-                 onChange={()=>{}}
+                  onChange={() => {}}
                   type="text"
                   className=" p-[2 rounded bg-transparent w-2/3 "
                   disabled={true}
@@ -54,9 +58,11 @@ const handleUpdate = (e) => {
                 />
               </div>
               <div className="labels mt-3 flex justify-between items-center w-full">
-                <label className="whitespace-nowrap" htmlFor="username">Email: </label>
+                <label className="whitespace-nowrap" htmlFor="username">
+                  Email:{" "}
+                </label>
                 <input
-                 onChange={()=>{}}
+                  onChange={() => {}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
@@ -64,23 +70,25 @@ const handleUpdate = (e) => {
                 />
               </div>
               <div className="labels mt-3 flex justify-between items-center w-full">
-                <label className="whitespace-nowrap" htmlFor="username">Phone: </label>
+                <label className="whitespace-nowrap" htmlFor="username">
+                  Phone:{" "}
+                </label>
                 <input
-                 onChange={()=>{}}
+                  onChange={() => {}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
                   value={user.phone}
                 />
               </div>{" "}
-            <Button
-              variant="contained"
-              onClick={handleUpdate}
-              className="w-3/5"
-              type="submit"
-            >
-              Edit profile
-            </Button>
+              <Button
+                variant="contained"
+                onClick={handleUpdate}
+                className="w-3/5"
+                type="submit"
+              >
+                Edit profile
+              </Button>
             </form>
           </div>
         </div>
