@@ -131,7 +131,7 @@
   }
   
   .main>.subdiv2>div>h3{
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-left: 10%;
     margin-top: 20px;
     font-weight: 500;
@@ -305,6 +305,9 @@
           width: 100%;
           
         }
+        .order-No{
+          display: hide;
+        }
         
         .subdiv2>input{
           width: 50%;
@@ -359,6 +362,9 @@
       height: 80%;
       margin-left: 5%;
     }
+    .order-No{
+      display: none;
+    }
     .main>.subdiv1>.option>.details{
       margin-top: 30px;
       margin-left: 5%;
@@ -372,4 +378,215 @@
     .subdiv1{
       display: none;
     }
+    .order-No{
+      display: none;
+    }
   }
+  .order-tab{
+    width: 77.5%;
+    height: 100vh;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20%;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+  }
+  .lfloaters{
+    width: 70%;
+    height: 100vh;
+   
+
+
+  }
+  .uppers{
+    top: 0;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+  }
+  .uppers>div>h3{
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+  .uppers>div>p{
+    color: gray;
+  }
+  .uppers>div>button{
+    width: 100px;
+    height: 40px;
+    border-style: solid;
+    border-color: #F53B57;
+    border-width: 1px;
+    color: #F53B57;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .btns{
+    margin-left: 20px;
+  }
+  .all-orders{
+    margin-top: 40px;
+  }
+  .order{
+    width: 90%;
+    height: 80px;
+    background-color: #EEF0F8;
+    border-radius: 15px;
+    margin-left: 5%;
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+    
+  }
+  .order-No{
+    height: 100%;
+    width: 100px;
+    color: #F53B57;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 10px; 
+    display: flex;
+    align-items: center;
+    
+  }
+  .order-details{
+    font-weight: 500;
+    color: gray;
+  }
+  .order-details>p{
+    color: black;
+    font-weight: 500;
+    text-align: left;
+  }
+ .table-name{
+   display: flex;
+   align-items: center;
+   margin-left: 20%;
+ }
+ .table-name>hr{
+   width: 50px;
+   height: 3px;
+   background-color: #F53B57;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+ .order-prices>h3{
+   color: #F53B57;
+   font-size: 1.2em;
+   font-weight: 500;
+   margin-left: 25%;
+ }
+ .client-type{
+  display: flex;
+  align-items: center;
+  margin-left: 20%;
+ }
+ .client-type>hr{
+  width: 50px;
+  height: 3px;
+  background-color: #F53B57;
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+ .order-prices>span{
+   margin-left: 25%;
+   font-weight: 500;
+ }
+ .rfloaters>.option{
+   width: 100%;
+   padding: 10px 100px 10px 100px;
+
+ }
+ .option>h3{
+   color: gray;
+   font-size: 1.4em;
+   font-weight: 500;
+ }
+ .option>p{
+  font-size: 1.4em;
+  font-weight: 500;
+
+ }
+ .option>hr{
+   width: 100%;
+   height: 2px;
+ }
+ .add-order{
+   width: 80%;
+   height: 50vh;
+   margin-left: 10%;
+   border-radius: 15px;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #2F3640;
+ }
+ .add-order>h3{
+   text-align: left;
+   font-size: 1.2em;
+   font-weight: 500;
+   text-indent: 40px;
+ }
+ .add-order>p{
+   color: gray;
+   text-align: left;
+   font-size: 1.1em;
+   font-weight: 500;
+   text-indent: 40px;
+ }
+ .field{
+   margin-top: 10px;
+   display: flex;
+ }
+ .field>input{
+   width: 80%;
+  color: gray;
+  font-size: 1em;
+  font-weight: 500;
+  text-indent: 20px;
+  outline: none;
+ }
+ .field>.icon{
+   font-size: 1.7em;
+   color: #F53B57;
+   
+
+
+ }
+ .order-type{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   border-top-style: solid;
+   border-top-color: #2F3640;
+   border-top-width: 0.5px;
+   cursor: pointer;
+   
+ }
+ .order-type>#check{
+   width: 30px;
+   height: 30px;
+   border-width: 2px;
+   border-radius: 50%;
+   margin-left: 3%;
+ }
+ .order-type>p{
+  color: black;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-indent: 20px;
+  width: 100px;
+  text-align: left;
+
+ }
+ .order-type>button{
+   width: 80px;
+   height: 30px;
+   background-color: #F53B57;
+   color: white;
+   border-radius: 10px;
+   margin-left: 10px;
+
+ }
+ 
+  
