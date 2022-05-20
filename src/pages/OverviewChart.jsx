@@ -85,7 +85,7 @@ function OverViewChart() {
             <div className=" w-2 h-2 xl:w-3 xl:h-3 relative left-[22px] xl:left-9 mt-1 xl:mt-0.5 bg-blue-700 rounded-full" />
             <span className="bx bx-bell text-xl xl:bx-sm ml-1 xl:ml-3"></span>
             <h6 className="ml-2 text-xs mt-1.5 xl:text-base  xl:ml-4">
-              {uer.firstNAme} Asante
+              {/* {uer.firstNAme} Asante */}
             </h6>
             <img
               src={CatAvatar}
