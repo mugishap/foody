@@ -8,7 +8,7 @@ function Navbar() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   useEffect(() => {
-    if (user === {} || !user) {
+    if (user == {} || !user) {
       localStorage.removeItem("accessToken");
       localStorage.removeItem("refreshToken");
       localStorage.removeItem("userCredentials");
@@ -20,21 +20,14 @@ function Navbar() {
         setLoader(true);
     }
   }, []);
-  // useEffect(()=>{
-  //   function capitalizeFirstLetter(string) {
-  //     return string.charAt(0).toUpperCase() + string.slice(1);
-  //   }
 
-  //   setFirstName(capitalizeFirstLetter(user.firstName));
-  //   setFirstName(capitalizeFirstLetter(user.lastName));
-  // },[user])
   return (
-    <div className="navbar">
+    <div className="navbar p-2">
       {loader ? (
         <>
           {" "}
           <p>
-            F<span>OO</span>DY
+            {/* F<span>OO</span>DY */}
           </p>
           <div className="icons">
             <FaSearch id="search" />

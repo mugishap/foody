@@ -70,7 +70,7 @@ export default function Form() {
     console.log(data);
     const keys = Object.keys(data);
     if (keys.includes("apierror")) {
-      if (data.apierror.error === "Validation error") {
+      if (data.apierror.error == "Validation error") {
         swal(
           "Validation failed",
           "Password must contain capital letter,symbol, and, number. Nothing should be set to empty",

@@ -20,12 +20,12 @@ function Section2() {
    <div className='opening-hours'>
     <div className='specialInput2'>
     <p>From |</p>
-    <input type={"text"} placeholder="14:00"/>
+    <input onChange={()=>{}} type={"text"} placeholder="14:00"/>
 
   </div>
   <div className='specialInput2'>
     <p>From |</p>
-    <input type={"text"} placeholder="14:00"/>
+    <input onChange={()=>{}} type={"text"} placeholder="14:00"/>
 
   </div>
   </div>

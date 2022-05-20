@@ -13,13 +13,13 @@ function Sidebar(props) {
     window.location.replace('/login')
   }
   return (
-    <div className="z-10 shadow-2xl shadow-black sidebar-div fixed top-0  h-screen w-2/12  flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
+    <div className="z-10 shadow-2xl shadow-black sidebar-div relative top-0  h-screen w-2/12  flex flex-col text-white sidebar box-border pt-1 pr-1 pb-1 text:white">
       <span className="text-4xl font-[500] menu-logo text-center">
         F<span className="text-4xl menu-logo oo">oo</span>dy
       </span>
       <div className="mt-16 mb-96 flex items-center justify-center flex-col w-full">
         <Link to="/overview" className="w-full">
-          {tab === "overview" ? (
+          {tab == "overview" ? (
             <div className="border-l-white border-l-4 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx fixed absolute left-[30px] bx-list-ul bx-md"></span>
@@ -40,7 +40,7 @@ function Sidebar(props) {
           )}
         </Link>
         <Link to="/tables" className="w-full">
-          {tab === "tables" ? (
+          {tab == "tables" ? (
             <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx fixed absolute left-[30px] bxs-bowl-rice bx-md"></span>
@@ -61,7 +61,7 @@ function Sidebar(props) {
           )}
         </Link>
         <Link to="/orders" className="w-full">
-          {tab === "orders" ? (
+          {tab == "orders" ? (
             <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx fixed absolute left-[30px] bxs-group bx-md"></span>
@@ -82,7 +82,7 @@ function Sidebar(props) {
           )}
         </Link>
         <Link to="/menu" className="w-full">
-          {tab === "menu" ? (
+          {tab == "menu" ? (
             <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx fixed absolute left-[30px] bxs-food-menu bx-md"></span>
@@ -105,7 +105,7 @@ function Sidebar(props) {
       </div>
       <div className=" flex flex-col items-center justify-center">
         <Link to="/account" className="w-full">
-          {tab === "account" ? (
+          {tab == "account" ? (
             <div className="border-l-white border-l-8 flex items-center flex-row justify-between w-full box-border m-1 font-semibold text-xl h-10 cursor-pointer hover:bg-slate-700 hover:text-white pr-7 pl-7">
               <div className="flex items-center justify-start w-1/3 h-full">
                 <span className="bx fixed absolute left-[30px] bxs-face bx-md"></span>

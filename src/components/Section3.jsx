@@ -47,14 +47,14 @@ function Section3() {
 
         </div>
         <h3>Name</h3>
-        <input type={'text'} placeholder='Menu name' id='menu'/>
+        <input onChange={()=>{}} type={'text'} placeholder='Menu name' id='menu'/>
         <h3>Price</h3>
-        <input type={'text'} placeholder='RWF' id='menu'/>
+        <input  onChange={()=>{}} type={'text'} placeholder='RWF' id='menu'/>
 
         <h3>Menu description</h3>
-        <input type={'text'} placeholder='Ingredients' id='menu'/>
+        <input  onChange={()=>{}} type={'text'} placeholder='Ingredients' id='menu'/>
         <h3>Image</h3>
-        <input type={'text'} placeholder='Upload image' id='menu'/>
+        <input  onChange={()=>{}} type={'text'} placeholder='Upload image' id='menu'/>
 
        <div className='btn'><button>ADD MORE</button></div> 
 

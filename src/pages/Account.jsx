@@ -10,7 +10,7 @@ function Account() {
   const [user, setUser] = useState({});
   const [loader, setLoader] = useState(true);
   useEffect(() => {
-    JSON.parse(localStorage.getItem("userCredentials")) === {}
+    JSON.parse(localStorage.getItem("userCredentials")) == {}
       ? window.location.replace("/login")
       : setUser(JSON.parse(localStorage.getItem("userCredentials")));
   }, []);
@@ -36,6 +36,7 @@ const handleUpdate = (e) => {
               <div className="labels mt-3 flex justify-between items-center w-full">
                 <label htmlFor="username">First Name: </label>
                 <input
+                 onChange={()=>{}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
@@ -45,6 +46,7 @@ const handleUpdate = (e) => {
               <div className="labels mt-3 flex justify-between items-center w-full">
                 <label htmlFor="username">Last Name: </label>
                 <input
+                 onChange={()=>{}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
@@ -54,6 +56,7 @@ const handleUpdate = (e) => {
               <div className="labels mt-3 flex justify-between items-center w-full">
                 <label htmlFor="username">Email: </label>
                 <input
+                 onChange={()=>{}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
@@ -63,6 +66,7 @@ const handleUpdate = (e) => {
               <div className="labels mt-3 flex justify-between items-center w-full">
                 <label htmlFor="username">Phone: </label>
                 <input
+                 onChange={()=>{}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}

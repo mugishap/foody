@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import moment from "moment";
-import { Checkbox } from "@mui/material";
-
 
 function Menuside() {
   const [items, setItems] = useState({});
   const [loader, setLoader] = useState(true);
-  const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
   const getImages = async (_items) => {
     // console.log(items)
     const names = _items.content.map((item) => {
@@ -77,7 +75,7 @@ function Menuside() {
           </div>
           <div className="buttons ml-24">
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -88,7 +86,7 @@ function Menuside() {
               Drinks
             </button>
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -99,7 +97,7 @@ function Menuside() {
               Starter
             </button>
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -110,7 +108,7 @@ function Menuside() {
               Appetizer
             </button>
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -121,7 +119,7 @@ function Menuside() {
               Desert
             </button>
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -173,8 +171,7 @@ function Menuside() {
             <form className="w-10/12">
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
-
+                  <input onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Dessert</span>
                 </label>
               </div>

@@ -16,9 +16,9 @@ function RestProfile() {
           
           <div className='subdiv2'>
             
-            {section===1 && <Section1/>}
-            {section===2 && <Section2/>}
-            {section===3 && <Section3/>} 
+            {section==1 && <Section1/>}
+            {section==2 && <Section2/>}
+            {section==3 && <Section3/>} 
             
           </div>
 

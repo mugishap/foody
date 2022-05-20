@@ -12,7 +12,7 @@ import CatAvatar from "/CatProfile.png";
 function OverViewChart() {
   const [user,setUser] = useState({})
   useEffect(()=>{
-JSON.parse(localStorage.getItem('userCredentials')) === {} ? window.location.replace('/login') : setUser(JSON.parse(localStorage.getItem('userCredentials')))
+JSON.parse(localStorage.getItem('userCredentials')) == {} ? window.location.replace('/login') : setUser(JSON.parse(localStorage.getItem('userCredentials')))
   },[])
   const titles = [
     { title: "Clients", amount: 60 },
