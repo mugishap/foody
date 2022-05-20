@@ -148,8 +148,7 @@ export default function Form() {
             {/* <label className="text-sm pt-2">PASSWORD</label> */}
             <TextField
               id="outlined-basicl"
-              defaultValue="Small"
-              label="Passoword"
+              label="Password"
               variant="outlined"
               className=" placeholder-blue-600  w-80 rounded-lg text-sm pl-6 mt-5 "
               type="password"

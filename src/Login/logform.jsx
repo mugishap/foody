@@ -61,7 +61,7 @@ export default function LogForm() {
             className="font-bold text-2xl text-center"
             style={{ marginBottom: "3rem" }}
           >
-            Welcome
+            Welcome back
           </h3>
           <div className="flex flex-col">
             {/* <label className="text-sm pt-2">EMAIL</label> */}

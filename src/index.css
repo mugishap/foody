@@ -60,7 +60,7 @@ code {
 .focused-div {
   transform: translateX(-26px);
 }
-body {
+.menu-side {
   background-color: #e5eaffed;
 }
 .focused-btn {

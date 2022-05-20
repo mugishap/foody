@@ -1,6 +1,7 @@
 import React from "react";
 import boxicons from "boxicons/css/boxicons.css";
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 function Sidebar(props) {
   let tab = props.tab;
@@ -103,7 +104,7 @@ function Sidebar(props) {
                 <span className="bx fixed bxs-cog bx-md"></span>
               </div>
               <div className="text-left text-white flex items-center justify-start w-1/2">
-                <span>Settings</span>
+                <Button>Logout</Button>
               </div>
             </div>
           ) : (
