@@ -88,7 +88,7 @@ export default function LogForm() {
           </div>
 
           <div className="flex flex-col items-center">
-            <button className="bg-[#F53B57] mt-10 h-[2em] w-40 text-white rounded-lg hover:scale-105  ">
+            <button className="bg-[#F53B57] mt-10 h-[2.5em] w-60 text-white rounded-lg hover:scale-105  ">
               Login
             </button>
           </div>
