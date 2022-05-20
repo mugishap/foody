@@ -10,7 +10,6 @@ import Sidebar  from "./components/Sidebar";
 import Orders from "./pages/Orders";
 import Login from './pages/Login'
 import OverViewChart from "./pages/OverviewChart";
-import Settings from "./pages/Settings";
 import Tables from "./pages/Tables";
 import Notfound from "./pages/Notfound";
 function App() {
@@ -26,7 +25,6 @@ function App() {
           <Route element={<OverViewChart />} path="/overview"></Route>
           <Route element={<Orders />} path="/orders"></Route>
           <Route element={<Tables />} path="/tables" />
-          <Route element={<Settings />} path="/settings"></Route>
           <Route element={<Landpage />} path="/"></Route>
           <Route element={<Notfound />} path="*"></Route>
         </Routes>

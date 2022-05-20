@@ -48,23 +48,18 @@ export default function LogForm() {
       className="absolute flex  content-center items-center"
       style={{ justifyContent: "center" }}
     >
-      <div className="bg-white flex-col flex  content-center items-center h-[35em] w-[30vw] absolute left-[40em]  rounded-lg scale-110 ">
-        <h3
-          className="font-bold text-2xl mt-10"
-          style={{ fontFamily: "Damion" }}
-        >
-          Sign In
-        </h3>
+      <div className="bg-white flex-col flex  content-center items-center h-[35em] w-[30vw] absolute left-[40em] pt-16  rounded-lg scale-110 ">
+      <Link to='/'><h1 className='text-black font-semibold text-5xl mb-5 leading-6 landing-logo font-[500]' >F<span className='text-[#F53B57] font-[kurale]'>oo</span>dy</h1></Link>
 
-        <form action="" onSubmit={handleSubmit} style={{ marginTop: "2rem" }}>
+
+        <form action="" onSubmit={handleSubmit} className='mt-4'>
           <h3
             className="font-bold text-2xl text-center"
             style={{ marginBottom: "3rem" }}
           >
-            Welcome
+            Welcome back
           </h3>
           <div className="flex flex-col">
-            {/* <label className="text-sm pt-2">EMAIL</label> */}
             <TextField
               id="outlined-basic"
               label="Email"
@@ -75,14 +70,11 @@ export default function LogForm() {
               }}
               placeholder="Email"
               name="Email"
-              // className="bg-[#C4C4C4] opacity-25 placeholder-black h-8 w-80 rounded-lg text-sm pl-1"
             />
           </div>
           <div className="flex flex-col mt-6">
-            {/* <label className="text-sm pt-2">PASSWORD</label> */}
             <TextField
               id="outlined-basicl"
-              defaultValue="Small"
               label="Passoword"
               variant="outlined"
               className=" placeholder-blue-600  w-80 rounded-lg text-sm pl-6 mt-5 "
@@ -92,7 +84,6 @@ export default function LogForm() {
               }}
               placeholder="Password"
               name="password"
-              // className="bg-[#C4C4C4] opacity-25 placeholder-black h-8 w-80 rounded-lg text-sm pl-1"
             />
           </div>
 
