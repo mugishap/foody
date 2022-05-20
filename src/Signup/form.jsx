@@ -79,7 +79,7 @@ export default function Form() {
       className="absolute flex  content-center items-center"
       style={{ justifyContent: "center" }}
     >
-      <div className="bg-white flex-col flex  content-center items-center h-[35em] w-[30vw] absolute left-[40em]  rounded-lg scale-110 ">
+      <div className="bg-white flex-col flex  content-center items-center h-[36em] w-[30vw] absolute left-[40em]  rounded-lg scale-110 ">
         <h3
           className="font-bold text-2xl mt-10"
           style={{ fontFamily: "Damion", fontSize: "2.1rem" }}
@@ -161,10 +161,10 @@ export default function Form() {
             />
           </div>
           <div className="flex flex-col items-center">
-            <button className="bg-[#F53B57] mt-5 h-[2em] w-40 text-white rounded-lg hover:scale-105">
+            <button className="bg-[#F53B57] mt-5 h-[2.5em] w-60 text-white rounded-lg hover:scale-105">
               Register
             </button>
-            <Link to="/login" className="text-[#F53B57] hover:font-semibold ">
+            <Link to="/login" className="text-[#F53B57] hover:font-semibold mt-2 ">
               Login
             </Link>
           </div>
