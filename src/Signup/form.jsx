@@ -67,23 +67,21 @@ export default function Form() {
       }
     );
     const data = await api.json();
-    console.log(data);
     const keys = Object.keys(data);
+    console.log(keys);
     if (keys.includes("apierror")) {
-      if (data.apierror.error == "Validation error") {
-        swal(
-          "Validation failed",
-          "Password must contain capital letter,symbol, and, number. Nothing should be set to empty",
-          "error",
-          {
-            timer: 2000,
-            buttons: false,
-          }
-        );
-        setLoader(false);
-        return;
-      }
-    } else if (keys.includes("token")) {
+      swal(
+        "Validation failed",
+        data.apierror.message,
+        "error",
+        {
+          timer: 1000,
+          buttons: false,
+        }
+      );
+      setLoader(false);
+      return;
+    } else if (keys.includes("success")) {
       logUserIn({ email, password });
     }
   };
@@ -93,13 +91,13 @@ export default function Form() {
       className="absolute flex  content-center items-center"
       style={{ justifyContent: "center" }}
     >
-      <div className="bg-white flex-col flex  content-center items-center h-[36em] w-[30vw] absolute left-[40em] pt-10  rounded-lg scale-110 ">
+      <div className="bg-white flex-col flex  content-center items-center h-[40em] w-[30vw] absolute left-[40em] pt-10  rounded-lg scale-110 ">
         <Link to="/">
-          <h1 className="text-black font-semibold text-5xl mb-5 leading-6 landing-logo font-[500]">
-            F<span className="text-[#F53B57] font-[kurale]">oo</span>dy
+          <h1 className="text-black font-semibold text-5xl mb-5 signuplogo leading-6 landing-logo font-[500]">
+            F<span className="text-[#F53B57] signuplogo">oo</span>dy
           </h1>
         </Link>
-
+        <h3 className="text-xl signuphead">Signup</h3>
         <form className="mt-5 w-8/12" onSubmit={handleSubmit}>
           <div className="flex flex-col mt-6 mt-4">
             <TextField
@@ -170,7 +168,7 @@ export default function Form() {
           <div className="flex flex-col items-center">
             {loader ? (
               <img
-                src="https://res.cloudinary.com/precieux/image/upload/v1653023282/cube_wg1jwa.gif"
+                src="https://res.cloudinary.com/precieux/image/upload/v1653022686/infinity_rojfu8.gif"
                 className="w-[62px] "
                 height={100}
                 alt="logo"
