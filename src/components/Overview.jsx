@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./Bar";
+import Sidebar from './../components/Sidebar'
 import { FaSearch, FaPlusCircle } from "react-icons/fa";
 import { MdNotificationsActive } from "react-icons/md";
 import "./css/Overview.css";
