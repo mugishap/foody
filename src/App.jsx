@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Signup from "./pages/Signup";
 import Menu from "./pages/Menu";
 import RestProfile from "./pages/RestProfile"
+import Orders from "./pages/Orders";
 import Account from "./pages/Account";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
         <Route element={<Signup />} path="/signup"></Route>
         <Route element={<Menu />} path="/menu"></Route>
+        <Route element={<Orders/>} path="/orders"/>
         <Route element={<RestProfile/>} path="/createProfile"/>
         <Route element={<Account />} path="/account"></Route>
         </Routes>
