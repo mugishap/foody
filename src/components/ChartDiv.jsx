@@ -32,7 +32,7 @@ const RevenuesData = [
 ];
 function ChartDiv() {
   return (
-    <div className="flex  flex-col-reverse md:flex-row h-fit md:h-[500px] mt-6 w-[100%] xl:w-[95%] border-2  rounded-md border-blue-400">
+    <div className="flex  flex-col-reverse md:flex-row h-fit mt-6 w-[100%] xl:w-[95%] border-2  rounded-md border-blue-400">
       <div className="w-[100%] md:w-[83%] h-full md:border-r-2 md:border-blue-400 ">
         <div className="flex flex-row w-[93%] justify-between mt-4 pr-1 md:pr-3 flex-wrap">
           <div className="flex flex-col">
