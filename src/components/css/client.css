@@ -1,5 +1,8 @@
-h2{
-    font-family: "kurali";
+@import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+.client-h2{
+    font-family: "kurale";
     font-style: bold;
     margin-bottom: 30px;
 }
@@ -46,7 +49,7 @@ margin-top: 20px;
    
    
  }
- label{
+ .client-labels{
      margin-bottom: 20px;
      font-family: "kurali";
  }

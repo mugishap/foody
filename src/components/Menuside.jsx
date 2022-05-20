@@ -27,11 +27,12 @@ function Menuside() {
             headers: {
               "X-RapidAPI-Host": "bing-image-search1.p.rapidapi.com",
               "X-RapidAPI-Key":
-                "4d3efa6d60mshe9647b4fc7ea6dbp1bf6dajsn7de302358e22",
+                "9657fe62f6msha6e9555c9710604p10b4a2jsn29b89285b70c",
             },
           }
         );
         const data = await api.json();
+        console.log(data)
         _items.content[i].image = data.value[0].thumbnailUrl;
         imageArray.push(data.value[0].thumbnailUrl);
       }
@@ -160,7 +161,7 @@ function Menuside() {
               <div />
             </div>
           ) : (
-            ""
+            <img src="https://res.cloudinary.com/precieux/image/upload/v1653023282/cube_wg1jwa.gif" alt="" />
           )}
           <div className="ml-16 w-3/12 mt-48 rounded-xl border-4 flex flex-col items-center justify-center p-4 border-[#f53b57] ">
             <span>Add new items</span>

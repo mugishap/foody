@@ -74,8 +74,8 @@ export default function LogForm() {
           </div>
           <div className="flex flex-col mt-6">
             <TextField
-              id="outlined-basicl"
-              label="Passoword"
+              id="outlined-basic"
+              label="Password"
               variant="outlined"
               className=" placeholder-blue-600  w-80 rounded-lg text-sm pl-6 mt-5 "
               type="password"

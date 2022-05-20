@@ -1,5 +1,5 @@
 import React from 'react';
-import './Bar.css'
+import './css/Bar.css'
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { BsPieChartFill } from "react-icons/bs";
 import { HiUserGroup } from "react-icons/hi";
@@ -10,7 +10,7 @@ import { FcSlrBackSide } from "react-icons/fc";
 function Sidebar() {
   return (
     <div>
-        <form className='form'>
+        <form className='.bar-form form'>
         <div className='rec'>
         <h2 className='food'><div>F</div><div className='oo'>oo</div><div>dy</div></h2>
             <div className='over'>
