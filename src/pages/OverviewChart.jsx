@@ -77,7 +77,7 @@ JSON.parse(localStorage.getItem('userCredentials')) == {} ? window.location.repl
   };
 
   return (
-    <div className="flex flex-row w-full h-full fixed">
+    <div className="flex flex-col md:flex-row w-full h-full fixed ">
       <Sidebar tab='overview'/>
       <div className="flex flex-col w-full px-2 md:px-6 xl:px-14 overflow-y-scroll pt-6 mb-4">
         <div className="flex flex-row justify-between w-[100%] xl:w-[95%]">
