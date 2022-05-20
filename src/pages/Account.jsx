@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import React, { useState, useEffect } from "react";
+import swal from "sweetalert";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
@@ -15,12 +16,15 @@ function Account() {
   }, []);
 const handleUpdate = (e) => {
   e.preventDefault()
-  swa
+  swal("Ooops!!!","Feature is not yet available","error",{
+    buttons:false,
+    timer:1000
+  })
 }
   return (
-    <div className="flex justify-between  items-stretch flex-row">
+    <div className="flex justify-between  items-center flex-row">
       <Sidebar tab="account" />
-      <div className="w-10/12  fixed overflow-hidden z-10 flex flex-col items-center justify-center">
+      <div className="w-10/12  fixed overflow-hidden flex flex-col items-center justify-center">
         <div className="m-24 flex flex-col justify-center items-center bg-slate-300 rounded-md w-6/12 box-border  h-auto p-10">
           <img
             src="https://res.cloudinary.com/precieux/image/upload/v1652201747/avatar-man_fzclmz.png"

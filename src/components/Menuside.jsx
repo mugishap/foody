@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import moment from "moment";
+import { Checkbox } from "@mui/material";
+
 
 function Menuside() {
   const [items, setItems] = useState({});
   const [loader, setLoader] = useState(true);
-
+  const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
   const getImages = async (_items) => {
     // console.log(items)
     const names = _items.content.map((item) => {
@@ -171,31 +173,32 @@ function Menuside() {
             <form className="w-10/12">
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+
                   <span className="text-start">Dessert</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Drink</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Appetizer</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Main</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Starter</span>
                 </label>
               </div>

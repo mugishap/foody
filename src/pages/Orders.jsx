@@ -40,7 +40,7 @@ function Orders() {
 
         },
         {
-            no:1,
+            no:2,
             orderName:"Kaffir Lime vodka lemongreass,Ginger,citrus",
             recipe:'Tommy yummy',
             qty:2,
@@ -51,7 +51,7 @@ function Orders() {
 
         },
         {
-            no:1,
+            no:3,
             orderName:"Kaffir Lime vodka lemongreass,Ginger,citrus",
             recipe:'Tommy yummy',
             qty:2,
@@ -62,7 +62,7 @@ function Orders() {
 
         },
         {
-            no:1,
+            no:4,
             orderName:"Kaffir Lime vodka lemongreass,Ginger,citrus",
             recipe:'Tommy yummy',
             qty:2,
@@ -73,7 +73,7 @@ function Orders() {
 
         },
         {
-            no:1,
+            no:5,
             orderName:"Kaffir Lime vodka lemongreass,Ginger,citrus",
             recipe:'Tommy yummy',
             qty:2,
@@ -108,12 +108,12 @@ function Orders() {
         }
     ]
   return (
-    <div className='order-main'>
+    <div className='order-main flex items-start justify-start  w-full'>
         <Sidebar/>
-        <div className="orders">
+        <div className="orders fixed w-10/12">
               
               <Navbar/>
-              <div className='order-tab'>
+              <div className='order-tab ml-72'>
                   <div className='lfloaters'>
                       <div className='uppers'>
                           <div>
@@ -140,6 +140,7 @@ function Orders() {
                               amount={item.amount}
                               clientType={item.clientType}
                               phoneNo={item.phoneNo}
+                              key={item.no}
                               />
 
                           ))}
@@ -152,6 +153,7 @@ function Orders() {
                           <OrderStats
                            status={item.status}
                            number={item.number}
+                           key={item.number}
                            />
                       ))
 
@@ -168,6 +170,7 @@ function Orders() {
                               <OrderType
                                 type={item.type}
                                 state={item.state}
+                                key={item.type}
                                 />
                           ))}
 
