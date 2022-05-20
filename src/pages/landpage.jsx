@@ -1,15 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+
 function Landpage() {
   return (
     <div className='lg:w-full lg:overflow-x-hidden sm:w-full '>
       <div className=' lg:w-full lg:overflow-x-hidden sm:w-full md:w-full '>
        <svg   className = " lg:h-screen sm:h-screen  md-screen md-full"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500"><path fill="#061730" fill-opacity="1" d="M0,390L1440,160L1440,0L0,0Z"></path></svg>
-       <h1 className='text-white absolute top-5 text-5xl ml-5 font-normal leading-6 font-kurale' >F<span className='text-[#F53B57]'>oo</span>dy</h1>
+       <Link to='/'><h1 className='text-white absolute top-5 text-5xl ml-5 leading-6 landing-logo font-[500]' >F<span className='text-[#F53B57] font-[kurale]'>oo</span>dy</h1></Link>
 
      <div className='absolute  left-0 top-60'>
      <h2 className=' text-white  font-bold lg:text-6xl sm:text-4xl leading-6  lg:mt-[-80px]  sm:ml-12'>REGISTER FOR FREE</h2>
      <p className='lg:text-2xl text-white font-normal leading-6 ml-7 sm:mt-5 sm:w-3/4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia suscipit ratione tempore <br></br>soluta quisquam  ratione modi quam?</p>
-     <button className='bg-[#F53B57] lg:text-white sm:text-white lg:w-80  sm:w-64 lg:h-12  sm:h-12 lg:mt-8 sm:mt-5 lg:ml-20 ml-12 rounded-lg text-1xl'>Register your restaurant</button>
+     <Link to='/signup'><button className='bg-[#F53B57] lg:text-white sm:text-white lg:w-80  sm:w-64 lg:h-12  sm:h-12 lg:mt-8 sm:mt-5 lg:ml-20 ml-12 rounded-lg text-1xl'>Register your restaurant</button></Link>
      </div>
        <svg width="30" height="30" className='absolute right-80 top-5' viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className='' d="M18.3201 32C18.4078 32.6339 18.7219 33.2146 19.2044 33.635C19.6869 34.0553 20.3052 34.2869 20.9451 34.2869C21.585 34.2869 22.2033 34.0553 22.6858 33.635C23.1683 33.2146 23.4824 32.6339 23.5701 32H18.3201Z" fill="#F53B57"/>
@@ -33,7 +35,7 @@ function Landpage() {
  </div>
  <div className='grid lg:grid-cols-3 ml-68 sm:ml-12 gap-32 lg:mt-[-260px] w-3/4 sm:justify-center'>
  <div className="row1  bg-[#EEF0F8] sm:w-[330px] sm:h-[332px] lg:w-[330px] lg:h-[332px] rounded-3xl">
- <svg   className = " ml-20 mt-5" width="90" height="120" viewBox="0 0 117 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <svg   className = " ml-24 mt-5" width="90" height="120" viewBox="0 0 117 120" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_132_21)">
 <path d="M36.4316 32.7725C36.4316 45.1167 46.1988 55.1622 58.2009 55.1622C70.203 55.1622 79.9702 45.1167 79.9702 32.7725C79.9702 20.4283 70.203 10.3828 58.2009 10.3828C46.1988 10.3828 36.4316 20.4283 36.4316 32.7725Z" fill="#F53B57"/>
 <path d="M96.4549 119.843H101.308V113.446C101.308 88.7602 86.0634 68.667 67.3334 68.667H47.919C29.1842 68.667 13.944 88.7602 13.944 113.446V119.843H96.4549Z" fill="#F53B57"/>
@@ -44,13 +46,14 @@ function Landpage() {
 </clipPath>
 </defs>
 </svg>
-
-   <h1 className='items-center   ml-20 mt-6  text-2xl font-semibold'>Step 1</h1>
-   <p className = "ml-20 mt-5 font-normal tetxt-xl ">Eat here</p>
+    {/* <div className="items-center justify-center mt-5  left-0"> */}
+    <h1 className='items-center mt-4 text-2xl font-semibold leading-6'>step 1</h1>
+   <p  className = " font-normal  text-xl mt-4">Ear here</p>
+   {/* </div> */}
 
  </div>
  <div className="row2  rounded-3xl bg-[#EEF0F8] w-[330px] h-[332px]">
- <svg className = " ml-20 mt-5" width="91" height="94" viewBox="0 0 91 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <svg className = " ml-24 mt-5" width="91" height="94" viewBox="0 0 91 94" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_54_149)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M90.4526 18.5736C91.4402 16.6613 89.2008 17.2413 89.2008 17.2413C89.2008 17.2413 74.2715 32.1434 72.1966 30.3173C70.1216 28.4913 86.814 14.2086 84.8388 11.5396C83.0111 9.05178 68.3459 26.8128 66.5842 24.6434C64.8394 22.4784 79.1421 6.93355 79.1421 6.93355C79.1421 6.93355 79.6858 4.59327 77.8609 5.61879C55.3736 18.1938 52.5091 29.9171 52.5091 29.9171C52.5091 29.9171 51.735 32.2004 53.4152 33.9651C53.5796 34.1185 12.3881 76.7095 6.87408 82.4594C4.19082 85.2467 14.036 95.3163 16.7024 92.529C22.2178 86.7791 63.096 43.8784 63.2435 44.0376C64.9392 45.798 67.1293 44.9901 67.1293 44.9901C67.1293 44.9901 78.3849 42.0027 90.4526 18.5736Z" fill="#F53B57"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M48.598 61.6131C59.56 73.0369 78.0408 92.2894 78.0408 92.2894C78.0408 92.2894 86.1074 89.5445 87.244 82.4594L57.9178 51.9043C54.8083 55.1376 51.7017 58.3739 48.598 61.6131Z" fill="#F53B57"/>
@@ -62,23 +65,27 @@ function Landpage() {
 </clipPath>
 </defs>
 </svg>
-
-   <h1 className='items-center  ml-20 mt-8  text-2xl font-semibold'>step 2</h1>
-   <p  className = "ml-20 mt-5  font-normal text-xl">Eat here</p>
+  {/* <div className="items-center justify-center mt-5 ml-3"> */}
+  <h1 className='items-center mt-4 text-2xl font-semibold leading-6'>step 2</h1>
+   <p  className = " font-normal  text-xl mt-4">Ear here</p>
+   {/* </div> */}
 
  </div>
+ 
  <div className="row3 sm:mt-3 rounded-3xl bg-[#EEF0F8] w-[330px] h-[332px]">
- <svg  className = " ml-20 mt-12" width="99" height="100" viewBox="0 0 88 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+ {/* <div className="items-center justify-center mt-5 ml-3 text-center"> */}
+ <svg  className = " ml-24 mt-12" width="99" height="100" viewBox="0 0 88 97" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M38.0112 83.528H14.6667V13.4724H63.5556V37.1296C64.6509 37.2499 65.6925 37.7117 66.5583 38.4609C67.4241 39.2101 68.0784 40.2157 68.4445 41.3599V13.4724C68.4445 12.0432 67.9294 10.6725 67.0126 9.66187C66.0957 8.65125 64.8522 8.0835 63.5556 8.0835H14.6667C13.3701 8.0835 12.1266 8.65125 11.2098 9.66187C10.2929 10.6725 9.77783 12.0432 9.77783 13.4724V83.528C9.77783 84.9572 10.2929 86.3279 11.2098 87.3385C12.1266 88.3491 13.3701 88.9169 14.6667 88.9169H41.9467L39.5023 86.2224C38.8094 85.4752 38.2968 84.549 38.0112 83.528V83.528Z" fill="#F53B57"/>
 <path d="M81.9868 63.2385L77.0979 61.5949C76.7511 60.2758 76.2757 59.002 75.6801 57.7957L78.1245 52.784C78.2167 52.5928 78.2499 52.3736 78.219 52.1597C78.1881 51.9458 78.0949 51.7488 77.9534 51.5985L74.3357 47.6915C74.1993 47.5356 74.0206 47.4328 73.8265 47.3988C73.6325 47.3648 73.4336 47.4013 73.2601 47.5029L68.7379 50.1974C67.6338 49.4895 66.4613 48.9201 65.2423 48.4999L63.7512 43.111C63.6888 42.91 63.5697 42.7363 63.4114 42.6151C63.2531 42.4939 63.0638 42.4317 62.8712 42.4374H57.9823C57.7908 42.4392 57.6047 42.5081 57.451 42.634C57.2972 42.7599 57.1837 42.9363 57.1267 43.1379L55.6356 48.5268C54.4103 48.928 53.2296 49.4793 52.1156 50.1704L47.6667 47.476C47.4932 47.3744 47.2944 47.3378 47.1003 47.3718C46.9063 47.4059 46.7275 47.5086 46.5912 47.6646L42.9978 51.5446C42.8564 51.6949 42.7631 51.8919 42.7323 52.1058C42.7014 52.3197 42.7345 52.5389 42.8267 52.7301L45.2712 57.634C44.6442 58.8619 44.1441 60.1634 43.7801 61.514L38.8912 63.1576C38.7083 63.2204 38.5482 63.3455 38.434 63.515C38.3198 63.6845 38.2573 63.8896 38.2556 64.1007V69.4896C38.2573 69.7007 38.3198 69.9058 38.434 70.0752C38.5482 70.2447 38.7083 70.3699 38.8912 70.4326L43.7801 72.0762C44.1491 73.3991 44.6492 74.6731 45.2712 75.8754L42.8267 80.9948C42.7345 81.1861 42.7014 81.4053 42.7323 81.6192C42.7631 81.8331 42.8564 82.0301 42.9978 82.1804L46.4445 86.222C46.5809 86.378 46.7596 86.4808 46.9536 86.5148C47.1477 86.5488 47.3465 86.5123 47.5201 86.4107L52.0912 83.7162C53.171 84.3599 54.31 84.8748 55.489 85.252L56.9801 90.6409C57.037 90.8425 57.1505 91.019 57.3043 91.1449C57.4581 91.2708 57.6441 91.3396 57.8356 91.3415H62.7245C62.9161 91.3396 63.1021 91.2708 63.2559 91.1449C63.4096 91.019 63.5231 90.8425 63.5801 90.6409L65.0712 85.252C66.2421 84.8741 67.373 84.3593 68.4445 83.7162L73.0645 86.4107C73.2381 86.5123 73.4369 86.5488 73.631 86.5148C73.825 86.4808 74.0037 86.378 74.1401 86.222L77.6845 82.3151C77.826 82.1648 77.9193 81.9678 77.9501 81.7539C77.981 81.54 77.9478 81.3208 77.8557 81.1296L75.4112 76.064C76.0036 74.8749 76.4789 73.6193 76.829 72.3187L81.7179 70.6751C81.9008 70.6124 82.0608 70.4872 82.1751 70.3177C82.2893 70.1483 82.3517 69.9432 82.3534 69.7321V64.2085C82.3803 64.0252 82.3602 63.8373 82.2955 63.6659C82.2307 63.4945 82.1238 63.3465 81.9868 63.2385V63.2385ZM60.3779 75.9562C58.7649 75.9722 57.1839 75.4597 55.8357 74.4835C54.4875 73.5074 53.4327 72.1118 52.8054 70.4737C52.178 68.8357 52.0063 67.0291 52.3121 65.2834C52.6178 63.5376 53.3873 61.9313 54.5227 60.6684C55.6581 59.4054 57.1083 58.5428 58.6893 58.19C60.2703 57.8372 61.9107 58.0101 63.4024 58.6868C64.8941 59.3634 66.1697 60.5134 67.0674 61.9906C67.9652 63.4678 68.4445 65.2057 68.4445 66.9837C68.4446 69.3494 67.5971 71.6195 66.0864 73.2998C64.5756 74.9802 62.524 75.9349 60.3779 75.9562V75.9562Z" fill="#F53B57"/>
 </svg>
-
-   <h1 className='items-center ml-20 mt-8  text-2xl font-semibold leading-6'>step 3</h1>
-   <p  className = "ml-20 mt-5 font-normal  text-xl">Ear here</p>
+   
+   <h1 className='items-center mt-4 text-2xl font-semibold leading-6'>step 3</h1>
+   <p  className = " font-normal  text-xl mt-4">Ear here</p>
+   {/* </div> */}
 
  </div>
 </div>
-    <svg className='lg:top-40 sm:top-32 absolute lg:right-10 md:right-0 sm:right-0 ml-2 sm:h-64 sm:w-80 h-3/5 w-4/5 top-12 right-0 '  viewBox="0 0 428 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='lg:top-20 sm:top-20 absolute lg:right-12 md:right-0 sm:right-0 ml-2 sm:h-64 s md:h-3/5 md:w-1/4 top-6 right-0 '  viewBox="0 0 428 382" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M428 379.986H139.179V381.162H428V379.986Z" fill="#3F3D56"/>
 <path d="M374.099 179.973C374.655 180.59 375.067 181.31 375.31 182.087C375.552 182.864 375.619 183.681 375.506 184.483C375.393 185.286 375.103 186.058 374.654 186.748C374.206 187.438 373.608 188.032 372.901 188.49L343.01 207.867L329.848 216.153C329.101 216.623 328.194 216.814 327.306 216.689C326.417 216.563 325.61 216.13 325.041 215.473C324.709 215.091 324.469 214.644 324.338 214.165C324.207 213.687 324.187 213.186 324.281 212.7C324.374 212.213 324.579 211.751 324.88 211.347C325.181 210.942 325.571 210.603 326.024 210.355L338.773 203.366L361.021 183.359L346.719 168.853L357.313 161.351L374.099 179.973Z" fill="#A0616A"/>
 <path d="M303.81 362.424H296.498L292.156 305.403L310.697 304.903L303.81 362.424Z" fill="#A0616A"/>
