@@ -60,9 +60,9 @@ code {
 .focused-div {
   transform: translateX(-26px);
 }
-body {
+/* body {
   background-color: #e5eaffed;
-}
+} */
 .focused-btn {
   background-color: #f53b57;
   color: white;
