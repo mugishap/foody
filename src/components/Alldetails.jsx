@@ -1,5 +1,5 @@
 import React from 'react'
-import './Alldetails.css';
+import './css/Alldetails.css';
 import { MdRemoveRedEye } from "react-icons/md";
 
 function Alldetails() {
