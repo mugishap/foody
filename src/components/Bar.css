@@ -1,0 +1,70 @@
+form {
+    background-color: #2F3640;
+    color: white;
+    font-family: "kurale";
+}
+.oo{
+    color: #F53B57;
+}
+.food{
+    display: flex;
+    margin-left: 30px;
+}
+.rec{
+    height: 500px;
+    border-left: solid #F53B57 3px;
+    background-color: #2F3640;
+    margin-left: 40px;
+}
+.form{
+    height: 775px;
+    width: 200px;
+    margin-left: 20px;
+}
+.cu{
+    margin-top: -50px;
+    height: 20em;
+    background-color: #F53B57;
+    margin-left: 40px;
+}
+.over{
+    margin-bottom: 70px;
+}
+.view{
+    margin-bottom: 20px;
+    margin-left: -15px;
+}
+
+.clients{
+    margin-bottom: 20px;
+    margin-left: -40px;
+}
+.users{
+    margin-bottom: 200px;
+    margin-left: -50px;
+}
+.settings{
+    margin-bottom: 20px;
+    margin-left: -40px;
+}
+.account{
+    margin-left: -15px;
+}
+.body{
+    width: 300px;
+    display: flex;
+    background-color: aqua;
+}
+.adding{
+    margin-left: -370px;
+}
+.ading{
+    margin-left: -300px;
+    
+}
+.plus{
+    float: right;
+    margin-right: 30px;
+    margin-top: 3px;
+}
+
