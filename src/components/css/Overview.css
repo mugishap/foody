@@ -1,4 +1,4 @@
-.body {
+.overview-body {
  background-color: #E4EDF1;
  height: 104vh;
  width: 400vh;
@@ -6,7 +6,7 @@ margin-top: 19px;
 display: block;
 font-family: "kurale";
 }
-img{
+.overview-img{
     height: 50px;
     float: right;
     margin-right: 70px;
@@ -20,7 +20,7 @@ img{
     margin-left: 50em;
     margin-top: 30px;
 }
-h3{
+.overview-h3{
     margin-left: 100px;
 }
 .notify{
@@ -117,14 +117,14 @@ margin-left: 30px;
 font-size: 10px;
 margin-top: 15px;
 }
-button{
+.overview-button{
     color: white;
     background-color: gray;
     border: none;
     padding: 5px;
     border-radius: 10px;
 }
-h4{
+.overview-h4{
     margin-left: 30px;
     text-align: left;
-}
+} 
