@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 
 import { Line } from "react-chartjs-2";
@@ -10,6 +10,10 @@ import Chart from "chart.js/auto";
 import boxicons from "boxicons/css/boxicons.css";
 import CatAvatar from "/CatProfile.png";
 function OverViewChart() {
+  const [user,setUser] = useState({})
+  useEffect(()=>{
+JSON.parse(localStorage.getItem('userCredentials')) == {} ? window.location.replace('/login') : setUser(JSON.parse(localStorage.getItem('userCredentials')))
+  },[])
   const titles = [
     { title: "Clients", amount: 60 },
     { title: "Revenues (RWF)", amount: 3571100 },
@@ -85,7 +89,7 @@ function OverViewChart() {
             <div className=" w-2 h-2 xl:w-3 xl:h-3 relative left-[22px] xl:left-9 mt-1 xl:mt-0.5 bg-blue-700 rounded-full" />
             <span className="bx bx-bell text-xl xl:bx-sm ml-1 xl:ml-3"></span>
             <h6 className="ml-2 text-xs mt-1.5 xl:text-base  xl:ml-4">
-              Bruce Asante
+              {user.firstName} {user.lastName}
             </h6>
             <img
               src={CatAvatar}
