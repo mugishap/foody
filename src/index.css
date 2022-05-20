@@ -76,10 +76,17 @@ code {
   font-weight: 500;
 }
 
-
+.signuplogo{
+  font-family: Kurale;
+}
 :root {
   --form-control-color: #f53b57;
   --form-background:white;
+}
+.signuphead{
+  font-family: Damion;
+  font-size:2em;
+  margin-top: 0.5em;
 }
 
 *,
