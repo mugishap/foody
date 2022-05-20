@@ -75,7 +75,7 @@ function Menuside() {
           </div>
           <div className="buttons ml-24">
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -86,7 +86,7 @@ function Menuside() {
               Drinks
             </button>
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -97,7 +97,7 @@ function Menuside() {
               Starter
             </button>
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -108,7 +108,7 @@ function Menuside() {
               Appetizer
             </button>
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -119,7 +119,7 @@ function Menuside() {
               Desert
             </button>
             <button
-              className="p-3 rounded-md border-4 m-3 menu-btn w-32"
+              className="p-3 rounded-md border-4 m-3 menu-btn w-32 hover:bg-[#f53b57] hover:text-white"
               onMouseOver={(e) => {
                 e.target.classList.add("focused-btn");
               }}
@@ -171,31 +171,31 @@ function Menuside() {
             <form className="w-10/12">
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Dessert</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Drink</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Appetizer</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Main</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input type="checkbox" name="checkbox-checked" />
+                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
                   <span className="text-start">Starter</span>
                 </label>
               </div>

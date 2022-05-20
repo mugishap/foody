@@ -1,32 +1,42 @@
-import React from 'react'
+import React from "react";
 
-function Order({no,orderName,recipe,qty,tableNAme,amount,clientType,phoneNo}) {
-    
+function Order({
+  no,
+  clientName,
+  orderName,
+  recipe,
+  qty,
+  tableName,
+  amount,
+  clientType,
+  phoneNo,
+}) {
   return (
-    <div className="order">
-    <div className='order-No'>
-        <p>order {no} |</p>
-
-    </div>
-    <div className='order-details'>
+    <div className="order h-32 flex items-center justify-around ">
+      <div className="order-No">
+        <p>Order {no} |</p>
+      </div>
+      <div className="order-details">
         <h3>{orderName}</h3>
-        <p>{recipe} | x {qty}</p>
-        <div className='table-name'>
-        <hr/> <p>{tableNAme}</p><hr/>
+        <p>
+          {recipe} x {qty}
+        </p>
+        <div className="table-name flex items-center flex-col justify-center">
+          <p>{tableName}</p>
+          <hr />
+          <p>{clientName}</p>
         </div>
-
-    </div>
-    <div className='order-prices'>
+      </div>
+      <div className="order-prices">
         <h3>FRW {amount}</h3>
-        <div className='client-type'>
-        <hr/> <p>{clientType}</p><hr/>
-        
+        <div className="client-type">
+          <hr /> <p>{clientType}</p>
+          <hr />
         </div>
         <span>{phoneNo}</span>
+      </div>
     </div>
-
-</div>
-  )
+  );
 }
 
-export default Order
+export default Order;
