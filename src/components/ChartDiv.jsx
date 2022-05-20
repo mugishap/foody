@@ -3,6 +3,7 @@ import "chart.js";
 import { Line } from "react-chartjs-2";
 import Revenues from "./Revenues";
 import Chart from "chart.js/auto";
+import moment from "moment";
 const data = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
   datasets: [
@@ -31,6 +32,8 @@ const RevenuesData = [
   { title: "Clients", amount: 952203 },
 ];
 function ChartDiv() {
+  const date = moment().format("dddd, MMMM Do YYYY");
+
   return (
     <div className="flex  flex-col-reverse md:flex-row h-fit mt-6 w-[100%] xl:w-[95%] border-2  rounded-md border-blue-400">
       <div className="w-[100%] md:w-[83%] h-full md:border-r-2 md:border-blue-400 ">
@@ -38,7 +41,7 @@ function ChartDiv() {
           <div className="flex flex-col">
             <h5 className="text-base text-black font-bold ml-5">Todays trends</h5>
             <p className=" flex  text-xs text-gray-500 font-semibold mt-1  ml-5">
-              as of 25 2022 09:41 pm
+              {date}
             </p>
           </div>
 

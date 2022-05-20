@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 
+.signinheading{
+  font-family: Damion;
+}
 * {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -60,7 +64,7 @@ code {
 .focused-div {
   transform: translateX(-26px);
 }
-/* body {
+.menu-side {
   background-color: #e5eaffed;
 } */
 .focused-btn {

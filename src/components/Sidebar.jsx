@@ -5,6 +5,13 @@ import PhoneDropdown from "./phoneDropdown";
 function Sidebar(props) {
   const [displayDropdown,setDisplayDropdown]=useState("left-[1000px]")
   let tab = props.tab;
+  const handleLogout = () => {
+    localStorage.removeItem('userCredentials')
+    localStorage.removeItem('accessToken')
+    localStorage.removeItem('refreshToken')
+    localStorage.removeItem('images')
+    window.location.replace('/login')
+  }
   return (
     <div className="w-full md:w-2/12">
 
