@@ -8,7 +8,7 @@ function Landpage() {
       <div className=" lg:w-full lg:overflow-x-hidden sm:w-full md:w-full ">
         <svg
           className=" lg:h-screen sm:h-screen  md-screen md-full"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           viewBox="0 0 1460 420"
         >
           <path
@@ -50,7 +50,7 @@ function Landpage() {
           className="absolute right-80 top-5"
           viewBox="0 0 39 36"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path
             className=""
@@ -70,7 +70,7 @@ function Landpage() {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path d="M13 2H11V22H13V2Z" fill="white" />
         </svg>
@@ -81,7 +81,7 @@ function Landpage() {
           height="43"
           viewBox="0 0 42 43"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <ellipse cx="21" cy="21.5" rx="21" ry="21.5" fill="#30425B" />
         </svg> */}
@@ -91,7 +91,7 @@ function Landpage() {
           height="29"
           viewBox="0 0 31 29"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path
             d="M20.5346 18.193C21.2672 17.8248 22.1057 17.6152 22.9988 17.6152H23.0018C23.0927 17.6152 23.135 17.5133 23.0684 17.4566C22.1397 16.6769 21.0788 16.0472 19.9291 15.5932C19.917 15.5875 19.9049 15.5847 19.8928 15.579C21.7727 14.3018 22.9958 12.2259 22.9958 9.88379C22.9958 6.00391 19.6415 2.86035 15.5031 2.86035C11.3647 2.86035 8.01346 6.00391 8.01346 9.88379C8.01346 12.2259 9.2365 14.3018 11.1195 15.579C11.1074 15.5847 11.0953 15.5875 11.0832 15.5932C9.72996 16.1284 8.516 16.8959 7.47156 17.8758C6.43316 18.8454 5.60646 19.9949 5.03758 21.2601C4.47786 22.499 4.17579 23.8263 4.14754 25.1711C4.14673 25.2013 4.1524 25.2314 4.1642 25.2595C4.17601 25.2877 4.19372 25.3133 4.21629 25.335C4.23887 25.3566 4.26584 25.3738 4.29562 25.3855C4.32541 25.3973 4.3574 25.4033 4.38972 25.4033H6.2031C6.33328 25.4033 6.44226 25.3042 6.44529 25.1824C6.50584 22.9961 7.44129 20.9485 9.09724 19.3966C10.8077 17.7908 13.0843 16.9072 15.5061 16.9072C17.2226 16.9072 18.8695 17.3519 20.2893 18.1845C20.3258 18.2059 20.3677 18.218 20.4107 18.2195C20.4538 18.221 20.4965 18.2118 20.5346 18.193Z"
@@ -128,7 +128,7 @@ function Landpage() {
         className="lg:top-20 sm:top-20 absolute lg:right-12 md:right-0 sm:right-0 ml-2 sm:h-64 s md:h-3/5 md:w-1/4 sm:w-1/4 top-6 right-0 "
         viewBox="0 0 428 382"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="https://www.w3.org/2000/svg"
       >
         <path d="M428 379.986H139.179V381.162H428V379.986Z" fill="#3F3D56" />
         <path
