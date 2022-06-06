@@ -13,7 +13,7 @@ export default function Form() {
 
   const logUserIn = async (data) => {
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/auth/signin",
+      "https://backend.supamenu.rw/supapp/api/auth/signin",
       {
         headers: { "Content-Type": "application/json" },
         method: "POST",
@@ -53,7 +53,7 @@ export default function Form() {
     e.preventDefault();
     setLoader(true);
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/auth/client/signup",
+      "https://backend.supamenu.rw/supapp/api/auth/client/signup",
       {
         headers: { "Content-Type": "application/json" },
         method: "POST",

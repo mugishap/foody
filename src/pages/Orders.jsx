@@ -18,7 +18,7 @@ function Orders() {
     if (!token) return window.location.replace("/login");
 
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/orders?page=0&size=30",
+      "https://backend.supamenu.rw/supapp/api/orders?page=0&size=30",
       {
         method: "GET",
         headers: {
