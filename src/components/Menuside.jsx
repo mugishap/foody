@@ -27,11 +27,12 @@ function Menuside() {
             headers: {
               "X-RapidAPI-Host": "bing-image-search1.p.rapidapi.com",
               "X-RapidAPI-Key":
-                "4d3efa6d60mshe9647b4fc7ea6dbp1bf6dajsn7de302358e22",
+                "9657fe62f6msha6e9555c9710604p10b4a2jsn29b89285b70c",
             },
           }
         );
         const data = await api.json();
+        console.log(data);
         _items.content[i].image = data.value[0].thumbnailUrl;
         imageArray.push(data.value[0].thumbnailUrl);
       }
@@ -42,9 +43,9 @@ function Menuside() {
   };
   const getItems = async () => {
     const token = localStorage.getItem("accessToken");
-    if (!token) window.location.replace('/login');
+    if (!token) window.location.replace("/login");
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/menu-items?page=0&size=30",
+      "https://backend.supamenu.rw/supapp/api/menu-items?page=0&size=30",
       {
         method: "GET",
         headers: {
@@ -160,7 +161,13 @@ function Menuside() {
               <div />
             </div>
           ) : (
-            ""
+            <div className="flex items-center justify-center w-full h-full">
+              <img
+                src="https://res.cloudinary.com/precieux/image/upload/v1653023282/cube_wg1jwa.gif"
+                alt=""
+                className="w-2/12"
+              />
+            </div>
           )}
           <div className="ml-16 w-3/12 mt-48 rounded-xl border-4 flex flex-col items-center justify-center p-4 border-[#f53b57] ">
             <span>Add new items</span>
@@ -171,31 +178,51 @@ function Menuside() {
             <form className="w-10/12">
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input onChange={()=>{}} type="checkbox" name="checkbox-checked" />
+                  <input
+                    onChange={() => {}}
+                    type="checkbox"
+                    name="checkbox-checked"
+                  />
                   <span className="text-start">Dessert</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input onChange={()=>{}} type="checkbox" name="checkbox-checked" />
+                  <input
+                    onChange={() => {}}
+                    type="checkbox"
+                    name="checkbox-checked"
+                  />
                   <span className="text-start">Drink</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
+                  <input
+                    onChange={() => {}}
+                    type="checkbox"
+                    name="checkbox-checked"
+                  />
                   <span className="text-start">Appetizer</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
+                  <input
+                    onChange={() => {}}
+                    type="checkbox"
+                    name="checkbox-checked"
+                  />
                   <span className="text-start">Main</span>
                 </label>
               </div>
               <div className="w-full">
                 <label className="form-control flex flex-row items-center justify-between w-full">
-                  <input  onChange={()=>{}} type="checkbox" name="checkbox-checked" />
+                  <input
+                    onChange={() => {}}
+                    type="checkbox"
+                    name="checkbox-checked"
+                  />
                   <span className="text-start">Starter</span>
                 </label>
               </div>
