@@ -12,6 +12,8 @@ import Login from './pages/Login'
 import OverViewChart from "./pages/OverviewChart";
 import Tables from "./pages/Tables";
 import Notfound from "./pages/Notfound";
+import Client from "./components/Client";
+import Overview from "./components/Overview";
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,8 @@ function App() {
           <Route element={<Menu />} path="/menu"></Route>
           <Route element={<Login />} path="/login"></Route>
           <Route element={<RestProfile />} path="/createProfile" />
+          <Route element={<Client/>} path="/client" />
+          <Route element={<Overview/>} path="/description" />
           <Route element={<Account />} path="/account"></Route>
           <Route element={<OverViewChart />} path="/overview"></Route>
           <Route element={<Orders />} path="/orders"></Route>

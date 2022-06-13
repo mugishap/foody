@@ -11,7 +11,7 @@ export default function LogForm() {
     e.preventDefault();
     setLoader(true);
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/auth/signin",
+      "https://backend.supamenu.rw/supapp/api/auth/signin",
       {
         headers: { "Content-Type": "application/json" },
         method: "POST",
@@ -74,8 +74,8 @@ export default function LogForm() {
           </div>
           <div className="flex flex-col mt-6">
             <TextField
-              id="outlined-basicl"
-              label="Passoword"
+              id="outlined-basic"
+              label="Password"
               variant="outlined"
               className=" placeholder-blue-600  w-80 rounded-lg text-sm pl-6 mt-5 "
               type="password"
