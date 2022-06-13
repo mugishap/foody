@@ -11,7 +11,7 @@ export default function LogForm() {
     e.preventDefault();
     setLoader(true);
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/auth/signin",
+      "https://backend.supamenu.rw/supapp/api/auth/signin",
       {
         headers: { "Content-Type": "application/json" },
         method: "POST",

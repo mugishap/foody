@@ -23,7 +23,7 @@ function OverViewChart() {
     const token = localStorage.getItem("accessToken");
     if (!token) return window.location.replace("/login");
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/service-providers?page=0&size=30",
+      "https://backend.supamenu.rw/supapp/api/service-providers?page=0&size=30",
       {
         headers: {
           "Content-Type": "application/json",
