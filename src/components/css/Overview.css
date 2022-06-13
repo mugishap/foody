@@ -1,0 +1,130 @@
+.overview-body {
+ background-color: #E4EDF1;
+ height: 104vh;
+ width: 400vh;
+margin-top: 19px;
+display: block;
+font-family: "kurale";
+}
+.overview-img{
+    height: 50px;
+    float: right;
+    margin-right: 70px;
+    margin-top: -50px;
+    border-radius: 80%;
+}
+.overall{
+    display: flex;
+}
+.search{
+    margin-left: 50em;
+    margin-top: 30px;
+}
+.overview-h3{
+    margin-left: 100px;
+}
+.notify{
+    margin-top: 29px;
+    margin-left: 30px;
+}
+.border{
+    height: 30px;
+    background-color: black;
+    border-left: solid black 2px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.sonia {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.Client{
+height: 120px;
+width: 500px;
+top: 30%;
+left: 55%;
+position: absolute;
+transform: translate(-90%,-90%); 
+box-sizing: border-box;
+border-radius: 10px;
+box-shadow: 5px 2px 5px 2px;
+background-attachment: fixed;
+background-color: #E4EDF1;
+padding-left: -900px;
+margin-top: -18px;
+}
+
+.All{
+    height: 510px;
+    width: 800px;
+    background-color: white;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    border-radius: 10px;
+    
+    
+}
+.head{
+    display: flex;
+    margin-left: 50px;
+}
+.navBar{
+    display: flex;
+  
+}
+.sales{
+    display: flex;
+}
+.report{
+    margin-right: 90px;
+}
+.eye{
+    margin-bottom: 50px;
+}
+.ear{
+ margin-bottom: 50px;
+}
+.mouth{
+margin-bottom: 50px;
+}
+.nose {
+ margin-bottom: 50px;
+}
+.frw{
+    margin-bottom: 15px;
+}
+.hand{
+    margin-bottom: 48px;
+}
+.money{
+    font-size: 10px;
+}
+.class, .sale{
+    margin-right: 90px;
+}
+.category{
+    margin-left: 20px;
+}
+.report{
+margin-left: 30px;
+}
+.sale{
+    margin-left: 20px;
+}
+.update{
+font-size: 10px;
+margin-top: 15px;
+}
+.overview-button{
+    color: white;
+    background-color: gray;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.overview-h4{
+    margin-left: 30px;
+    text-align: left;
+} 
