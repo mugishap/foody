@@ -6,7 +6,7 @@ function Menu() {
   document.querySelector('title').textContent = 'Foody | Menu'
 
   return (
-    <div className="flex justify-between flex-row">
+    <div className="flex justify-between flex-col md:flex-row">
       <Sidebar tab='menu' />
       <Menuside />
     </div>

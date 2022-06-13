@@ -14,29 +14,31 @@ function Account() {
       ? window.location.replace("/login")
       : setUser(JSON.parse(localStorage.getItem("userCredentials")));
   }, []);
-const handleUpdate = (e) => {
-  e.preventDefault()
-  swal("Ooops!!!","Feature is not yet available","error",{
-    buttons:false,
-    timer:1000
-  })
-}
+  const handleUpdate = (e) => {
+    e.preventDefault();
+    swal("Ooops!!!", "Feature is not yet available", "error", {
+      buttons: false,
+      timer: 1500,
+    });
+  };
   return (
-    <div className="flex justify-between  items-center flex-row">
+    <div className="flex justify-between fixed flex-col w-full md:flex-row">
       <Sidebar tab="account" />
-      <div className="w-10/12  fixed overflow-hidden flex flex-col items-center justify-center">
-        <div className="m-24 flex flex-col justify-center items-center bg-slate-300 rounded-md w-6/12 box-border  h-auto p-10">
+      <div className="w-full md:w-10/12 mt-32 overflow-hidden flex flex-col items-center ">
+        <div className="flex flex-col justify-center items-center bg-slate-300 rounded-md md:w-6/12 w-10/12 text-sm xl:text-base box-border p-[2rem]">
           <img
             src="https://res.cloudinary.com/precieux/image/upload/v1652201747/avatar-man_fzclmz.png"
             className="w-32 rounded-full h-32"
             alt=""
           />
-          <div className="form w-8/12 flex flex-col justify-center items-center">
+          <div className="form w-full flex flex-col justify-center items-center">
             <form className="w-full flex flex-col items-center justify-center ">
               <div className="labels mt-3 flex justify-between items-center w-full">
-                <label htmlFor="username">First Name: </label>
+                <label className="whitespace-nowrap" htmlFor="username">
+                  First Name:{" "}
+                </label>
                 <input
-                 onChange={()=>{}}
+                  onChange={() => {}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
@@ -44,19 +46,23 @@ const handleUpdate = (e) => {
                 />
               </div>
               <div className="labels mt-3 flex justify-between items-center w-full">
-                <label htmlFor="username">Last Name: </label>
+                <label className="whitespace-nowrap" htmlFor="username">
+                  Last Name:{" "}
+                </label>
                 <input
-                 onChange={()=>{}}
+                  onChange={() => {}}
                   type="text"
-                  className=" p-2 rounded bg-transparent w-2/3 "
+                  className=" p-[2 rounded bg-transparent w-2/3 "
                   disabled={true}
                   value={user.lastName}
                 />
               </div>
               <div className="labels mt-3 flex justify-between items-center w-full">
-                <label htmlFor="username">Email: </label>
+                <label className="whitespace-nowrap" htmlFor="username">
+                  Email:{" "}
+                </label>
                 <input
-                 onChange={()=>{}}
+                  onChange={() => {}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
@@ -64,23 +70,25 @@ const handleUpdate = (e) => {
                 />
               </div>
               <div className="labels mt-3 flex justify-between items-center w-full">
-                <label htmlFor="username">Phone: </label>
+                <label className="whitespace-nowrap" htmlFor="username">
+                  Phone:{" "}
+                </label>
                 <input
-                 onChange={()=>{}}
+                  onChange={() => {}}
                   type="text"
                   className=" p-2 rounded bg-transparent w-2/3 "
                   disabled={true}
                   value={user.phone}
                 />
               </div>{" "}
-            <Button
-              variant="contained"
-              onClick={handleUpdate}
-              className="w-3/5"
-              type="submit"
-            >
-              Edit profile
-            </Button>
+              <Button
+                variant="contained"
+                onClick={handleUpdate}
+                className="w-3/5"
+                type="submit"
+              >
+                Edit profile
+              </Button>
             </form>
           </div>
         </div>
