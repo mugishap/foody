@@ -18,7 +18,7 @@ function Orders() {
     if (!token) return window.location.replace("/login");
 
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/orders?page=0&size=30",
+      "https://backend.supamenu.rw/supapp/api/orders?page=0&size=30",
       {
         method: "GET",
         headers: {
@@ -92,10 +92,10 @@ function Orders() {
                   key={item.createdAt}
                 />
               ))}
-              <div className="add-order">
+              <div className="add-order w-11/12 flex flex-col items-center justify-start h-auto ">
                 <h3>Add Order</h3>
                 <p>Manually</p>
-                <div className="field">
+                <div className="field flex justify-between items-center">
                   <input
                     onChange={() => {}}
                     type="text"
@@ -106,7 +106,7 @@ function Orders() {
                 {data.map((item) => (
                   <OrderType
                     type={item.orderType}
-                    state={item.state}
+                    state={"state"}
                     key={item.type}
                   />
                 ))}
