@@ -95,13 +95,13 @@ export default function Form() {
     >
       <div className="bg-white flex-col flex  content-center items-center h-[36em] w-[30vw] absolute left-[40em] pt-10  rounded-lg scale-110 ">
         <Link to="/">
-          <h1 className="text-black font-semibold text-5xl mb-5 leading-6 landing-logo font-[500]">
+          <h1 className="text-black  text-5xl mb-5 leading-6 landing-logo font-[500]">
             F<span className="text-[#F53B57] font-[kurale]">oo</span>dy
           </h1>
         </Link>
 
         <form className="mt-5 w-8/12" onSubmit={handleSubmit}>
-          <div className="flex flex-col mt-6 mt-4">
+          <div className="flex flex-col mt-6 ">
             <TextField
               id="outlined-basic"
               label="Firstname"

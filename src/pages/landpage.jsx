@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import items from '../components/grids'
+import "./landpage.css"
 
 function Landpage() {
   return (
@@ -11,7 +12,7 @@ function Landpage() {
 
      <div className='absolute  left-0 top-60'>
      <h2 className=' text-white  font-bold lg:text-6xl sm:text-4xl leading-6  lg:mt-[-80px]  sm:ml-12'>REGISTER FOR FREE</h2>
-     <p className='lg:text-1xl text-white font-normal leading-6 ml-7 sm:mt-5 sm:w-3/4'>Our menus feature familiar, elevated comforts including a variety of gourmet sandwiches, soups and all-day breakfast options <br></br> alongside enticing entrées like our Prime Rib Dinner, <br></br>Short Rib Stroganoff and other thoughtfully sourced proteins.</p>
+     <p className='lg:text-1xl text-white font-normal leading-6 ml-7 sm:mt-5 sm:w-3/4'>Foody is leading local online food delivery market place connecting consumers and restaurant through its platform</p>
      <Link to='/signup'><button className='bg-[#F53B57] lg:text-white sm:text-white lg:w-80  sm:w-64 lg:h-12  sm:h-12 lg:mt-8 sm:mt-5 lg:ml-20 ml-12 rounded-lg text-1xl'>Register your restaurant</button></Link>
      <Link to='/login'><button className=' border-2 border-[#F53B57] lg:text-white sm:text-white lg:w-80  sm:w-64 lg:h-12  sm:h-12 lg:mt-8 sm:mt-5 lg:ml-20 ml-12 rounded-lg text-1xl'>Login to <span className='font-kurale'>foody</span>  </button></Link>
      </div>
@@ -35,8 +36,8 @@ function Landpage() {
 </svg>
 
  </div>
- <h1 className='text-4xl   absolute left-[40%] lg:top-[55%] text-white  sm:top-[30%]' > How it works</h1>
- <div className='grid lg:grid-cols-3 ml-72 sm:ml-16 gap-32 lg:mt-[-200px] w-3/4 sm:justify-center absolute left-[10%]'>
+ <h1 className='text-4xl   absolute left-[40%] lg:top-[55%] text-white  sm:top-[10%]' > How it works</h1>
+ <div className='grid lg:grid-cols-3 ml-72 sm:ml-16 gap-32 lg:mt-[-340px] w-3/4 sm:justify-center absolute left-[10%]'>
  {items.map((item)=>{
    const {id,par,svg,step}=item;
 
@@ -45,10 +46,10 @@ return (
   
   
   
-    <div className="p-[20px] bg-[#EEF0F8] h-[300px] w-[300px] block justify-center rounded-2xl pl-[90px] ">
-      <div className="mt-[30px]" >{svg}</div>
-      <h1 className="font-bold text-2xl mt-[10px]">{step}</h1>
-      <p className="pt-[5px] font-normal text-1.5xl">{par}</p>
+    <div className="functionalities">
+      <div className="functionalities-icon">{svg}</div>
+      <h1 className="functionalities-title">{step}</h1>
+      <p className=" functionalities-text">{par}</p>
 
     </div>
  
@@ -58,7 +59,7 @@ return (
  )
 }
 </div>
-    <svg className='lg:top-20 sm:top-20 absolute lg:right-12 md:right-0 sm:right-0 ml-2 sm:h-64 s md:h-3/5 md:w-1/4 sm:w-1/4 top-6 right-0 '  viewBox="0 0 428 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='lg:top-16 sm:top-20 absolute lg:right-12 md:right-0 sm:right-0 ml-2 sm:h-64 s md:h-3/5 md:w-1/4 sm:w-1/4 top-2 right-0 '  viewBox="0 0 428 382" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M428 379.986H139.179V381.162H428V379.986Z" fill="#3F3D56"/>
 <path d="M374.099 179.973C374.655 180.59 375.067 181.31 375.31 182.087C375.552 182.864 375.619 183.681 375.506 184.483C375.393 185.286 375.103 186.058 374.654 186.748C374.206 187.438 373.608 188.032 372.901 188.49L343.01 207.867L329.848 216.153C329.101 216.623 328.194 216.814 327.306 216.689C326.417 216.563 325.61 216.13 325.041 215.473C324.709 215.091 324.469 214.644 324.338 214.165C324.207 213.687 324.187 213.186 324.281 212.7C324.374 212.213 324.579 211.751 324.88 211.347C325.181 210.942 325.571 210.603 326.024 210.355L338.773 203.366L361.021 183.359L346.719 168.853L357.313 161.351L374.099 179.973Z" fill="#A0616A"/>
 <path d="M303.81 362.424H296.498L292.156 305.403L310.697 304.903L303.81 362.424Z" fill="#A0616A"/>
