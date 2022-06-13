@@ -34,7 +34,7 @@ function Client() {
         <input type="number" className="telephone"  placeholder="phone number" />
         </div>
         <div className='row'>
-        <label className="fname client-labels">Bank Account</label>
+        <label className="firstname client-labels">Bank Account</label>
         <input type="number" className="bank"  placeholder="phone" />
         </div>
         <button  className='submit'>Add Client</button>
